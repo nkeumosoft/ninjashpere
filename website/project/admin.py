@@ -4,12 +4,12 @@ from .models import Project, Technology
 
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ("id", "project_name", "project_link")
-    list_filter = ("project_technologies",)
+    list_display = ("id", "name", "link")
+    list_filter = ("technologies",)
 
 
 class TechnologyAdmin(admin.ModelAdmin):
-    list_display = ("id", "tech_name")
+    list_display = ("id", "name")
 
 
 admin.site.register(Technology, TechnologyAdmin)

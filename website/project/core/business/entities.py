@@ -2,12 +2,15 @@ from dataclasses import dataclass, field
 from typing import List, Optional
 from uuid import UUID, uuid4
 
+from website.project.core.business.interface.iproject import IProject
+from website.project.core.business.interface.itechnology import ITechnology
+
 
 @dataclass
-class Technology:
+class TechnologyEntity(ITechnology):
     _name: str
     _logo: str
-    _id: Optional[UUID] = None
+    _id: UUID = field(default=uuid4())
 
     @property
     def name(self):
@@ -22,20 +25,20 @@ class Technology:
         return self._id
 
     @classmethod
-    def factory(cls, name: str, logo: str, id: Optional[UUID] = None):
+    def factory(cls, name: str, logo: str, id: Optional[UUID] = None) -> ITechnology:
         id = id or uuid4()
-        obj = cls(_id=id, _name=name, _logo=logo)
+        obj = cls(name, logo, id)
         return obj
 
 
 @dataclass
-class Project:
+class ProjectEntity(IProject):
     _name: str
     _description: str
     _image: str
-    _technologies: List[Technology]
+    _technologies: List[ITechnology]
     _url: str
-    _id: Optional[UUID] = None
+    _id: UUID = field(default=uuid4())
 
     @property
     def id(self):
@@ -67,17 +70,10 @@ class Project:
         name: str,
         description: str,
         image_path: str,
-        technologies: List[Technology],
+        technologies: List[ITechnology],
         url: str,
         id: Optional[UUID] = None,
-    ):
+    ) -> IProject:
         id = id or uuid4()
-        obj = cls(
-            _id=id,
-            _name=name,
-            _description=description,
-            _image=image_path,
-            _technologies=technologies,
-            _url=url,
-        )
+        obj = cls(name, description, image_path, technologies, url, id)
         return obj
