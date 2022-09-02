@@ -1,6 +1,8 @@
-from blog.forms.member_forms import (CustomUserChangeForm,
-                                     CustomUserCreationForm)
-from blog.models import Member
+from blog.forms.member_forms import (
+    CustomUserChangeForm,
+    CustomUserCreationForm,
+)
+from blog.models import Comment, Member, Post
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
@@ -36,3 +38,5 @@ class CustomUserAdmin(UserAdmin):
 
 
 admin.site.register(Member, CustomUserAdmin)
+admin.site.register(Post)
+admin.site.register(Comment)
