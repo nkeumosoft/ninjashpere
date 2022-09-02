@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+#pycharm project
+.idea
+../.idea/
+.idea/
+media/
+#migration folder
+migrations/
+migrations/*
+*/migrations/*
+migrations/00*.py
