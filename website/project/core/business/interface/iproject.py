@@ -2,7 +2,7 @@ import abc
 from typing import List, Optional
 from uuid import UUID, uuid4
 
-from website.project.core.business.interface.itechnology import ITechnology
+from project.core.business.interface.itechnology import ITechnology
 
 
 class IProject(abc.ABC):

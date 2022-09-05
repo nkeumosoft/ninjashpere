@@ -2,8 +2,8 @@ from dataclasses import dataclass, field
 from typing import List, Optional
 from uuid import UUID, uuid4
 
-from website.project.core.business.interface.iproject import IProject
-from website.project.core.business.interface.itechnology import ITechnology
+from project.core.business.interface.iproject import IProject
+from project.core.business.interface.itechnology import ITechnology
 
 
 @dataclass

@@ -129,7 +129,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-.idea
+.idea/
 
 media
 migrations
+.pre-commit-config.yaml
+.isort.cfg

@@ -1,10 +1,10 @@
 from typing import List
 from uuid import UUID
 
-from website.project.core.business.entities import ProjectEntity
-from website.project.core.business.interface.iproject import IProject
-from website.project.core.business.interface.iproject_repos import IProjectRepository
-from website.project.models import Project
+from project.core.business.entities import ProjectEntity
+from project.core.business.interface.iproject import IProject
+from project.core.business.interface.iproject_repos import IProjectRepository
+from project.models import Project
 
 
 class ProjectRepository(IProjectRepository):

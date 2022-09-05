@@ -1,11 +1,11 @@
 import abc
-from typing import List
+from typing import Dict, List
 from uuid import UUID
 
 from project.core.business.interface.itechnology import ITechnology
 
 
-class ITechnologyRepository(metaclass=abc.ABCMeta):
+class ITechnologyUseCase(metaclass=abc.ABCMeta):
     @abc.abstractmethod
     def find(self, uuid: UUID) -> ITechnology:
         ...
@@ -15,13 +15,9 @@ class ITechnologyRepository(metaclass=abc.ABCMeta):
         ...
 
     @abc.abstractmethod
-    def create(self, tech: ITechnology) -> None:
+    def create(self, data: Dict) -> None:
         ...
 
     @abc.abstractmethod
     def list(self) -> List[ITechnology]:
-        ...
-
-    @abc.abstractmethod
-    def delete(self, uuid: UUID) -> None:
         ...

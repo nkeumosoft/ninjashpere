@@ -1,10 +1,10 @@
 from typing import List
 from uuid import UUID
 
-from website.project.core.business.entities import TechnologyEntity
-from website.project.core.business.interface.itechnology import ITechnology
-from website.project.core.business.interface.itechnology_repos import ITechnologyRepository
-from website.project.models import Technology
+from project.core.business.entities import TechnologyEntity
+from project.core.business.interface.itechnology import ITechnology
+from project.core.business.interface.itechnology_repos import ITechnologyRepository
+from project.models import Technology
 
 
 class TechnologyRepository(ITechnologyRepository):
