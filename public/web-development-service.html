@@ -5,14 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NinjaSphere - Services</title>
+    <link rel="stylesheet" href="output-style.css" />
   </head>
   <body>
-    <header></header>
-    <main>
-      <section>
-        <div>
-          <h1>Web Development Services</h1>
-          <p>
+    <header class="bg-white shadow-2xl">
+      <nav
+        class="max-w-7xl mx-auto flex justify-between items-center px-6 py-8"
+      >
+        <a href="index.html">
+          <div class="max-w-[260px] max-h-12">
+            <img
+              class="w-full h-full"
+              src="assets/images/ninjaSphere-banner.jpg"
+              alt="ninjaSphere logo"
+            />
+          </div>
+        </a>
+        <ul class="flex gap-4 justify-end items-center font-sans">
+          <li><a href="">Services</a></li>
+          <li><a href="">Case Study</a></li>
+          <li><a href="">Knowledge Hub</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="bg-slate-100">
+      <section class="flex justify-between h-screen p-10 max-w-7xl mx-auto">
+        <div class="max-w-3xl space-y-6">
+          <h1 class="text-7xl font-display text-gray-900">
+            Web Development Services
+          </h1>
+          <p class="font-sans text-base max-w-xl text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas
             ultricies mi eget mauris pharetra. Ornare suspendisse sed nisi lacus
@@ -24,120 +47,130 @@
         <img src="" alt="random image" />
         <!-- SVG enters here -->
       </section>
-      <section>
-        <ul>
-          <li>
-            <a href="/service/1">UI/UX Design</a>
-          </li>
-          <li>
-            <a href="/service/2">Front end development</a>
-          </li>
-          <li>
-            <a href="/service/3">backend development</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <div>
-          <h2>UI/UX Design</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas
-            ultricies mi eget mauris pharetra. Ornare suspendisse sed nisi lacus
-            sed viverra tellus. Quam adipiscing vitae proin sagittis. Vitae
-            ultricies leo integer malesuada nunc vel risus commodo viverra. Diam
-            volutpat commodo sed egestas egestas.
-          </p>
+      <section class="bg-slate-50 p-12 drop-shadow-sm">
+        <div class="max-w-7xl mx-auto">
+          <ul class="font-poppins flex gap-4 text-gray-800">
+            <li>
+              <a href="#">UI/UX Design</a>
+            </li>
+            <li>
+              <a href="#">Front end development</a>
+            </li>
+            <li>
+              <a href="#">backend development</a>
+            </li>
+          </ul>
         </div>
-        <section>
-          <div>
-            <h3>Deliverables</h3>
-            <ul>
-              <li>Wireframes</li>
-              <li>Mockups</li>
-              <li>Prototypes</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Tools</h3>
-            <ul>
-              <li>Adobe XD</li>
-              <li>Figma</li>
-              <li>Sketch</li>
-            </ul>
-          </div>
-        </section>
       </section>
-      <section>
-        <div>
-          <h2>Front end development</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas
-            ultricies mi eget mauris pharetra. Ornare suspendisse sed nisi lacus
-            sed viverra tellus. Quam adipiscing vitae proin sagittis. Vitae
-            ultricies leo integer malesuada nunc vel risus commodo viverra. Diam
-            volutpat commodo sed egestas egestas.
-          </p>
-        </div>
-        <section>
-          <div>
-            <h3>Deliverables</h3>
-            <ul>
-              <li>Responsive web pages</li>
-              <li>Single page applications</li>
-              <li>Progressive web apps</li>
-            </ul>
+      <div class="max-w-7xl mx-auto">
+        <section class="flex py-10">
+          <div class="basis-2/4 h-full">
+            <h2 class="text-3xl text-gray-800 font-display mb-10">
+              UI/UX Design
+            </h2>
+            <p class="text-gray-700 max-w-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Maecenas ultricies mi eget mauris pharetra. Ornare suspendisse sed
+              nisi lacus sed viverra tellus. Quam adipiscing vitae proin
+              sagittis. Vitae ultricies leo integer malesuada nunc vel risus
+              commodo viverra. Diam volutpat commodo sed egestas egestas.
+            </p>
           </div>
-          <div>
-            <h3>Tools</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Vue</li>
-              <li>Angular</li>
-            </ul>
-          </div>
+          <section class="basis-2/4 space-y-8">
+            <div class="flex flex-col space-y-3">
+              <h3 class="text-xl font-poppins">Deliverables</h3>
+              <ul class="text-gray-700">
+                <li>Wireframes</li>
+                <li>Mockups</li>
+                <li>Prototypes</li>
+              </ul>
+            </div>
+            <div class="flex flex-col space-y-3">
+              <h3 class="text-xl font-poppins">Tools</h3>
+              <ul class="text-gray-700 flex flex-col list-disc pl-5">
+                <li>Adobe XD</li>
+                <li>Figma</li>
+                <li>Sketch</li>
+              </ul>
+            </div>
+          </section>
         </section>
-      </section>
-      <section>
-        <div>
-          <h2>Backend development</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas
-            ultricies mi eget mauris pharetra. Ornare suspendisse sed nisi lacus
-            sed viverra tellus. Quam adipiscing vitae proin sagittis. Vitae
-            ultricies leo integer malesuada nunc vel risus commodo viverra. Diam
-            volutpat commodo sed egestas egestas.
-          </p>
-        </div>
-        <section>
-          <div>
-            <h3>Deliverables</h3>
-            <ul>
-              <li>REST APIs</li>
-              <li>GraphQL APIs</li>
-              <li>Serverless functions</li>
-            </ul>
+        <section class="flex py-10">
+          <div class="basis-2/4 h-full">
+            <h2 class="text-3xl text-gray-800 font-display mb-10">
+              Front end development
+            </h2>
+            <p class="text-gray-700 max-w-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Maecenas ultricies mi eget mauris pharetra. Ornare suspendisse sed
+              nisi lacus sed viverra tellus. Quam adipiscing vitae proin
+              sagittis. Vitae ultricies leo integer malesuada nunc vel risus
+              commodo viverra. Diam volutpat commodo sed egestas egestas.
+            </p>
           </div>
-          <div>
-            <h3>Tools</h3>
-            <ul>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>Python</li>
-              <li>Flask</li>
-              <li>Go</li>
-              <li>Java</li>
-              <li>Spring</li>
-            </ul>
-          </div>
+          <section class="basis-2/4 space-y-8">
+            <div class="flex flex-col space-y-3">
+              <h3 class="text-xl font-poppins">Deliverables</h3>
+              <ul class="text-gray-700">
+                <li>Responsive web pages</li>
+                <li>Single page applications</li>
+                <li>Progressive web apps</li>
+              </ul>
+            </div>
+            <div class="flex flex-col space-y-3">
+              <h3 class="text-xl font-poppins">Tools</h3>
+              <ul class="text-gray-700 flex flex-col list-disc pl-5">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Vue</li>
+                <li>Angular</li>
+              </ul>
+            </div>
+          </section>
         </section>
-      </section>
+        <section class="flex py-10">
+          <div class="basis-2/4 h-full">
+            <h2 class="text-3xl text-gray-800 font-display mb-10">
+              Backend development
+            </h2>
+            <p class="text-gray-700 max-w-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Maecenas ultricies mi eget mauris pharetra. Ornare suspendisse sed
+              nisi lacus sed viverra tellus. Quam adipiscing vitae proin
+              sagittis. Vitae ultricies leo integer malesuada nunc vel risus
+              commodo viverra. Diam volutpat commodo sed egestas egestas.
+            </p>
+          </div>
+          <section class="basis-2/4 space-y-8">
+            <div class="flex flex-col space-y-3">
+              <h3 class="text-xl font-poppins">Deliverables</h3>
+              <ul class="text-gray-700">
+                <li>REST APIs</li>
+                <li>GraphQL APIs</li>
+                <li>Serverless functions</li>
+              </ul>
+            </div>
+            <div class="flex flex-col space-y-3">
+              <h3 class="text-xl font-poppins">Tools</h3>
+              <ul class="text-gray-700 flex flex-col list-disc pl-5">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>Go</li>
+                <li>Java</li>
+                <li>Spring</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="max-w-7xl mx-auto"></footer>
   </body>
 </html>
