@@ -11,6 +11,10 @@ module.exports = {
         poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
         display: ["Lexend", ...defaultTheme.fontFamily.serif],
       },
+      backgroundImage: {
+        bottomWaveSlice: "url('assets/bottomWaveSlice.svg')",
+        topWaveSlice: "url('assets/topWaveSlice.svg')",
+      },
     },
   },
   plugins: [taiwindForms],

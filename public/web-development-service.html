@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="output-style.css" />
   </head>
   <body>
-    <header class="bg-white shadow-2xl">
+    <header class="bg-white drop-shadow-sm">
       <nav
         class="max-w-7xl mx-auto flex justify-between items-center px-6 py-8"
       >
@@ -21,17 +21,35 @@
             />
           </div>
         </a>
-        <ul class="flex gap-4 justify-end items-center font-sans">
-          <li><a href="">Services</a></li>
-          <li><a href="">Case Study</a></li>
-          <li><a href="">Knowledge Hub</a></li>
-          <li><a href="">Contact</a></li>
+        <ul
+          class="flex gap-12 justify-end items-center font-sans text-gray-800"
+        >
+          <li>
+            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-50"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-50"
+              >Case Study</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-50"
+              >Knowledge Hub</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-50"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <main class="bg-slate-100">
       <section class="flex justify-between h-screen p-10 max-w-7xl mx-auto">
-        <div class="max-w-3xl space-y-6">
+        <div class="max-w-3xl space-y-6 self-center">
           <h1 class="text-7xl font-display text-gray-900">
             Web Development Services
           </h1>
@@ -47,28 +65,46 @@
         <img src="" alt="random image" />
         <!-- SVG enters here -->
       </section>
-      <section class="bg-slate-50 p-12 drop-shadow-sm">
-        <div class="max-w-7xl mx-auto">
-          <ul class="font-poppins flex gap-4 text-gray-800">
+      <section class="bg-slate-50 shadow-inner">
+        <!-- <div class="bg-slate-100">
+          <div class="bg-topWaveSlice h-10 w-full text-slate-50"></div>
+        </div> -->
+        <div class="max-w-7xl mx-auto py-12">
+          <ul class="font-poppins flex gap-4 text-gray-800 capitalize">
             <li>
-              <a href="#">UI/UX Design</a>
+              <a
+                href="#ui/ux-design"
+                class="hover:opacity-100 focus:opacity-100 opacity-50"
+                >UI/UX Design</a
+              >
             </li>
             <li>
-              <a href="#">Front end development</a>
+              <a
+                href="#front-end-development"
+                class="hover:opacity-100 focus:opacity-100 opacity-50"
+                >Front end development</a
+              >
             </li>
             <li>
-              <a href="#">backend development</a>
+              <a
+                href="#back-end-development"
+                class="hover:opacity-100 focus:opacity-100 opacity-50"
+                >back end development</a
+              >
             </li>
           </ul>
         </div>
+        <!-- <div class="bg-slate-100">
+          <div class="bg-bottomWaveSlice h-16 w-full text-slate-50"></div>
+        </div> -->
       </section>
-      <div class="max-w-7xl mx-auto">
-        <section class="flex py-10">
+      <div class="max-w-7xl mx-auto pt-8">
+        <section class="flex py-10" id="ui/ux-design">
           <div class="basis-2/4 h-full">
             <h2 class="text-3xl text-gray-800 font-display mb-10">
               UI/UX Design
             </h2>
-            <p class="text-gray-700 max-w-lg">
+            <p class="text-gray-700 font-sans max-w-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Maecenas ultricies mi eget mauris pharetra. Ornare suspendisse sed
@@ -79,16 +115,16 @@
           </div>
           <section class="basis-2/4 space-y-8">
             <div class="flex flex-col space-y-3">
-              <h3 class="text-xl font-poppins">Deliverables</h3>
-              <ul class="text-gray-700">
+              <h3 class="text-xl font-poppins text-gray-900">Deliverables</h3>
+              <ul class="text-gray-700 font-sans list-disc pl-4">
                 <li>Wireframes</li>
                 <li>Mockups</li>
                 <li>Prototypes</li>
               </ul>
             </div>
             <div class="flex flex-col space-y-3">
-              <h3 class="text-xl font-poppins">Tools</h3>
-              <ul class="text-gray-700 flex flex-col list-disc pl-5">
+              <h3 class="text-xl font-poppins text-gray-900">Tools</h3>
+              <ul class="font-sans text-gray-700 flex flex-col list-disc pl-4">
                 <li>Adobe XD</li>
                 <li>Figma</li>
                 <li>Sketch</li>
@@ -96,12 +132,12 @@
             </div>
           </section>
         </section>
-        <section class="flex py-10">
+        <section class="flex py-16" id="front-end-development">
           <div class="basis-2/4 h-full">
-            <h2 class="text-3xl text-gray-800 font-display mb-10">
+            <h2 class="text-3xl text-gray-800 font-display mb-10 capitalize">
               Front end development
             </h2>
-            <p class="text-gray-700 max-w-lg">
+            <p class="text-gray-700 font-sans max-w-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Maecenas ultricies mi eget mauris pharetra. Ornare suspendisse sed
@@ -112,16 +148,20 @@
           </div>
           <section class="basis-2/4 space-y-8">
             <div class="flex flex-col space-y-3">
-              <h3 class="text-xl font-poppins">Deliverables</h3>
-              <ul class="text-gray-700">
+              <h3 class="text-xl font-poppins text-gray-900">Deliverables</h3>
+              <ul class="text-gray-700 font-sans list-disc pl-4">
                 <li>Responsive web pages</li>
                 <li>Single page applications</li>
                 <li>Progressive web apps</li>
               </ul>
             </div>
             <div class="flex flex-col space-y-3">
-              <h3 class="text-xl font-poppins">Tools</h3>
-              <ul class="text-gray-700 flex flex-col list-disc pl-5">
+              <h3 class="text-xl font-poppins text-gray-900" text-gray-800>
+                Tools
+              </h3>
+              <ul
+                class="font-sans text-gray-700 grid grid-cols-3 grid-rows-2 gap-y-1 list-disc pl-4 max-w-xs"
+              >
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -132,12 +172,12 @@
             </div>
           </section>
         </section>
-        <section class="flex py-10">
+        <section class="flex py-16" id="back-end-development">
           <div class="basis-2/4 h-full">
-            <h2 class="text-3xl text-gray-800 font-display mb-10">
-              Backend development
+            <h2 class="text-3xl text-gray-800 font-display mb-10 capitalize">
+              Back end development
             </h2>
-            <p class="text-gray-700 max-w-lg">
+            <p class="text-gray-700 font-sans max-w-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Maecenas ultricies mi eget mauris pharetra. Ornare suspendisse sed
@@ -148,16 +188,18 @@
           </div>
           <section class="basis-2/4 space-y-8">
             <div class="flex flex-col space-y-3">
-              <h3 class="text-xl font-poppins">Deliverables</h3>
-              <ul class="text-gray-700">
+              <h3 class="text-xl font-poppins text-gray-900">Deliverables</h3>
+              <ul class="text-gray-700 font-sans list-disc pl-4">
                 <li>REST APIs</li>
                 <li>GraphQL APIs</li>
                 <li>Serverless functions</li>
               </ul>
             </div>
             <div class="flex flex-col space-y-3">
-              <h3 class="text-xl font-poppins">Tools</h3>
-              <ul class="text-gray-700 flex flex-col list-disc pl-5">
+              <h3 class="text-xl font-poppins text-gray-900">Tools</h3>
+              <ul
+                class="font-sans text-gray-700 grid grid-cols-3 grid-rows-2 gap-y-1 list-disc pl-4 max-w-xs"
+              >
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>Python</li>
@@ -170,7 +212,85 @@
           </section>
         </section>
       </div>
+      <div class="bg-slate-50 py-20 shadow-inner">
+        <section class="max-w-7xl mx-auto">
+          <div class="max-w-2xl">
+            <h2 class="text-3xl text-gray-800 font-display mb-10 capitalize">
+              Contact
+            </h2>
+            <form class="flex flex-col space-y-8">
+              <div class="flex flex-col space-y-2">
+                <label for="name" class="text-gray-800 font-poppins text-lg">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="border border-gray-300 rounded-md px-4 py-2"
+                />
+              </div>
+              <div class="flex flex-col space-y-2">
+                <label for="email" class="text-gray-800 font-poppins text-lg">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="border border-gray-300 rounded-md px-4 py-2"
+                />
+              </div>
+              <div class="flex flex-col space-y-2">
+                <label for="message" class="text-gray-800 font-poppins text-lg">
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="border border-gray-300 rounded-md px-4 py-2"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-gray-800 text-white font-poppins font-bold text-lg rounded-md px-4 py-2"
+              >
+                Send
+              </button>
+          </div>
+          </form>
+        </section>
+      </div>
     </main>
-    <footer class="max-w-7xl mx-auto"></footer>
+    <footer class="bg-white py-16 shadow-xl border-t border-gray-100">
+      <section class="max-w-7xl mx-auto grid grid-cols-2">
+        <a href="index.html">
+          <div class="max-w-[260px] max-h-12">
+            <img
+              class="w-full h-full"
+              src="assets/images/ninjaSphere-banner.jpg"
+              alt="ninjaSphere logo"
+            />
+          </div>
+        </a>
+        <section class="flex gap-x-16">
+          <div>
+            <h3 class="text-gray-800 font-poppins text-xl mb-2">Engineering</h3>
+            <ul class="text-gray-700 font-sans">
+              <li><a href='' class="text-sm underline decoration-gray-600">Web development</a></li>
+              <li><a href='' class="text-sm underline decoration-gray-600">Mobile Development</a></li>
+              <li><a href='' class="text-sm underline decoration-gray-600">Cloud & DevOps</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-gray-800 font-poppins text-xl mb-2">Contact</h3>
+            <ul class="text-gray-700 font-sans">
+              <li class="text-sm"><span class="font-medium">Phone</span>: 123-456-7890</li>
+              <li class="text-sm"><span class="font-medium">Email</span>: commodoviverra@gmail.com
+            </ul>
+          </div>
+        </section>
+      </section>
+    </footer>
   </body>
 </html>
