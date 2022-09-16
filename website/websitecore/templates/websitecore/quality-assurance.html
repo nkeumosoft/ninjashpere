@@ -1,52 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NinjaSphere Could & DevOps Service</title>
-    <link rel="stylesheet" href="../styles/output-style.css" />
-  </head>
-  <body>
-    <header class="bg-white drop-shadow-sm">
-      <nav
-        class="max-w-7xl mx-auto flex justify-between items-center px-6 py-8"
-      >
-        <a href="index.html">
-          <div class="max-w-[260px] max-h-12">
-            <img
-              class="w-full h-full"
-              src="assets/images/ninjaSphere-logo-dark.jpg"
-              alt="ninjaSphere logo"
-            />
-          </div>
-        </a>
-        <ul
-          class="flex gap-12 justify-end items-center font-sans text-gray-800"
-        >
-          <li>
-            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-100"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-50"
-              >Case Study</a
-            >
-          </li>
-          <li>
-            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-50"
-              >Knowledge Hub</a
-            >
-          </li>
-          <li>
-            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-50"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    NinjaSphere Quality Assurance
+{% endblock %}
+
+{% block content %}
     <main class="bg-slate-100">
       <section class="flex justify-between h-screen p-10 max-w-7xl mx-auto">
         <div class="max-w-3xl space-y-6 self-center">
@@ -62,7 +21,7 @@
             issue-free experience for your users..
           </p>
         </div>
-        <img src="" alt="random image" />
+        <img alt="random image" src={% static 'websitecore/img/web_devices.svg' %}/>
         <!-- SVG enters here -->
       </section>
       <section class="bg-slate-50 shadow-inner">
@@ -156,7 +115,7 @@
               </ul>
             </div>
             <div class="flex flex-col space-y-3">
-              <h3 class="text-xl font-poppins text-gray-900" text-gray-800>
+              <h3 class="text-xl font-poppins text-gray-900">
                 Tools
               </h3>
               <ul
@@ -262,51 +221,5 @@
         </div>
       </section>
     </main>
-    <footer class="bg-white py-16 shadow-xl border-t border-slate-200">
-      <section class="max-w-7xl mx-auto grid grid-cols-2">
-        <a href="index.html">
-          <div class="max-w-[260px] max-h-12">
-            <img
-              class="w-full h-full"
-              src="assets/images/ninjaSphere-logo-dark.jpg"
-              alt="ninjaSphere logo"
-            />
-          </div>
-        </a>
-        <section class="flex gap-x-16">
-          <div>
-            <h3 class="text-gray-800 font-poppins text-xl mb-2">Engineering</h3>
-            <ul class="text-gray-700 font-sans">
-              <li>
-                <a href="" class="text-sm underline decoration-gray-600"
-                  >Web development</a
-                >
-              </li>
-              <li>
-                <a href="" class="text-sm underline decoration-gray-600"
-                  >Mobile Development</a
-                >
-              </li>
-              <li>
-                <a href="" class="text-sm underline decoration-gray-600"
-                  >Cloud & DevOps</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-gray-800 font-poppins text-xl mb-2">Contact</h3>
-            <ul class="text-gray-700 font-sans">
-              <li class="text-sm">
-                <span class="font-medium">Phone</span>: 123-456-7890
-              </li>
-              <li class="text-sm">
-                <span class="font-medium">Email</span>: commodoviverra@gmail.com
-              </li>
-            </ul>
-          </div>
-        </section>
-      </section>
-    </footer>
-  </body>
-</html>
+
+{% endblock %}
