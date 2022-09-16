@@ -109,6 +109,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.virtual
 
 # Spyder project settings
 .spyderproject
@@ -130,3 +131,9 @@ dmypy.json
 
 # Node modules
 *node_modules/
+.idea/
+
+media
+migrations
+.pre-commit-config.yaml
+.isort.cfg
