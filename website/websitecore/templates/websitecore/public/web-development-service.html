@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/output-style.css" />
   </head>
   <body>
-    <header class="bg-white drop-shadow-sm">
+    <header class="bg-white drop-shadow-sm border-b border-gray-200">
       <nav
         class="max-w-7xl mx-auto flex justify-between items-center px-6 py-8"
       >
@@ -25,23 +25,27 @@
           class="flex gap-12 justify-end items-center font-sans text-gray-800"
         >
           <li>
-            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-100"
-              >Services</a
-            >
+            <a href="#" class="hover:text-primary text-primary">Services</a>
           </li>
           <li>
-            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-50"
+            <a
+              href="#"
+              class="hover:text-primary hover:opacity-100 focus:opacity-100 opacity-50"
               >Case Study</a
             >
           </li>
           <li>
-            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-50"
+            <a
+              href="#"
+              class="hover:text-primary hover:opacity-100 focus:opacity-100 opacity-50"
               >Knowledge Hub</a
             >
           </li>
           <li>
-            <a href="#" class="hover:opacity-100 focus:opacity-100 opacity-50"
-              >Contact</a
+            <a
+              href="#"
+              class="bg-primary px-4 py-2 text-white opacity-100 rounded-lg shadow-md shadow-gray-300 hover:opacity-80 focus:opacity-80"
+              >Get in touch</a
             >
           </li>
         </ul>
@@ -50,7 +54,7 @@
     <main class="bg-slate-100">
       <section class="flex justify-between h-screen p-10 max-w-7xl mx-auto">
         <div class="max-w-3xl space-y-6 self-center">
-          <h1 class="text-7xl font-display text-gray-900 font-bold">
+          <h1 class="text-8xl font-display text-gray-900 font-bold">
             Web Development Services
           </h1>
           <p class="font-sans text-base max-w-xl text-gray-700">
@@ -62,7 +66,10 @@
             volutpat commodo sed egestas egestas.
           </p>
         </div>
-        <img src="" alt="random image" />
+        <div class="mt-36 maw-w-[200px]">
+          <img src="assets/web_devices.svg" alt="random image" />
+        </div>
+
         <!-- SVG enters here -->
       </section>
       <section class="bg-slate-50 shadow-inner">
@@ -74,21 +81,21 @@
             <li>
               <a
                 href="#ui/ux-design"
-                class="hover:opacity-100 focus:opacity-100 opacity-50"
+                class="hover:text-primary hover:opacity-100 focus:opacity-100 opacity-50"
                 >UI/UX Design</a
               >
             </li>
             <li>
               <a
                 href="#front-end-development"
-                class="hover:opacity-100 focus:opacity-100 opacity-50"
+                class="hover:text-primary hover:opacity-100 focus:opacity-100 opacity-50"
                 >Front end development</a
               >
             </li>
             <li>
               <a
                 href="#back-end-development"
-                class="hover:opacity-100 focus:opacity-100 opacity-50"
+                class="hover:text-primary hover:opacity-100 focus:opacity-100 opacity-50"
                 >back end development</a
               >
             </li>
@@ -98,8 +105,8 @@
           <div class="bg-bottomWaveSlice h-16 w-full text-slate-50"></div>
         </div> -->
       </section>
-      <div class="max-w-7xl mx-auto pt-8">
-        <section class="flex py-10" id="ui/ux-design">
+      <section class="max-w-7xl mx-auto pt-8" id="ui/ux-design">
+        <div class="flex py-10">
           <div class="basis-2/4 h-full">
             <h2 class="text-3xl text-gray-800 font-display mb-10">
               UI/UX Design
@@ -131,8 +138,10 @@
               </ul>
             </div>
           </section>
-        </section>
-        <section class="flex py-16" id="front-end-development">
+        </div>
+      </section>
+      <section class="bg-slate-50 shadow-inner" id="front-end-development">
+        <div class="max-w-7xl mx-auto flex py-16">
           <div class="basis-2/4 h-full">
             <h2 class="text-3xl text-gray-800 font-display mb-10 capitalize">
               Front end development
@@ -171,8 +180,10 @@
               </ul>
             </div>
           </section>
-        </section>
-        <section class="flex py-16" id="back-end-development">
+        </div>
+      </section>
+      <section class="pt-8 shadow-md shadow-primary" id="back-end-development">
+        <div class="flex py-10 max-w-7xl mx-auto">
           <div class="basis-2/4 h-full">
             <h2 class="text-3xl text-gray-800 font-display mb-10 capitalize">
               Back end development
@@ -210,8 +221,8 @@
               </ul>
             </div>
           </section>
-        </section>
-      </div>
+        </div>
+      </section>
       <div class="bg-slate-50 py-20 shadow-inner">
         <section class="max-w-7xl mx-auto">
           <div class="max-w-2xl">
@@ -253,7 +264,7 @@
               </div>
               <button
                 type="submit"
-                class="bg-gray-800 text-white font-poppins font-bold text-lg rounded-md px-4 py-2"
+                class="bg-primary text-white font-poppins font-bold text-lg rounded-md px-4 py-2"
               >
                 Send
               </button>
@@ -262,41 +273,41 @@
         </section>
       </div>
     </main>
-    <footer class="bg-white py-16 shadow-xl border-t border-slate-200">
+    <footer class="bg-accent-green py-16 shadow-xl border-t border-slate-200">
       <section class="max-w-7xl mx-auto grid grid-cols-2">
         <a href="index.html">
           <div class="max-w-[260px] max-h-12">
             <img
               class="w-full h-full"
-              src="assets/images/ninjaSphere-logo-dark.jpg"
+              src="assets/images/ninjasphere-logo-white.PNG"
               alt="ninjaSphere logo"
             />
           </div>
         </a>
         <section class="flex gap-x-16">
           <div>
-            <h3 class="text-gray-800 font-poppins text-xl mb-2">Engineering</h3>
-            <ul class="text-gray-700 font-sans">
+            <h3 class="text-white font-poppins text-xl mb-2">Engineering</h3>
+            <ul class="text-white font-sans">
               <li>
-                <a href="" class="text-sm underline decoration-gray-600"
+                <a href="" class="text-sm underline decoration-gray-400"
                   >Web development</a
                 >
               </li>
               <li>
-                <a href="" class="text-sm underline decoration-gray-600"
+                <a href="" class="text-sm underline decoration-gray-400"
                   >Mobile Development</a
                 >
               </li>
               <li>
-                <a href="" class="text-sm underline decoration-gray-600"
+                <a href="" class="text-sm underline decoration-gray-400"
                   >Cloud & DevOps</a
                 >
               </li>
             </ul>
           </div>
           <div>
-            <h3 class="text-gray-800 font-poppins text-xl mb-2">Contact</h3>
-            <ul class="text-gray-700 font-sans">
+            <h3 class="text-white font-poppins text-xl mb-2">Contact</h3>
+            <ul class="text-white font-sans">
               <li class="text-sm">
                 <span class="font-medium">Phone</span>: 123-456-7890
               </li>
