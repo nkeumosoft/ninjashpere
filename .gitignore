@@ -129,6 +129,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Node modules
+*node_modules/
 .idea/
 
 media
