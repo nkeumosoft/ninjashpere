@@ -19,6 +19,14 @@ class IPostRepository(metaclass=abc.ABCMeta):
         ...
 
     @abc.abstractmethod
+    def find_by_keyword(self, key_word: str) -> List[IPost]:
+        ...
+
+    @abc.abstractmethod
+    def find_by_type(self, post_type: str) -> List[IPost]:
+        ...
+
+    @abc.abstractmethod
     def create(self, post: IPost) -> None:
         ...
 

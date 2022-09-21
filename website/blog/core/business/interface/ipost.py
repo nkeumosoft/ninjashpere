@@ -1,8 +1,8 @@
 import abc
 from datetime import datetime
-from typing import List
-from uuid import UUID
+from typing import Set
 
+from blog.core.business.interface.ikeyword import IKeyWord
 from blog.core.business.interface.imember import IMember
 
 
@@ -12,11 +12,19 @@ class IPost(metaclass=abc.ABCMeta):
         ...
 
     @abc.abstractmethod
+    def post_type(self) -> str:
+        ...
+
+    @abc.abstractmethod
     def title(self) -> str:
         ...
 
     @abc.abstractmethod
     def content(self) -> str:
+        ...
+
+    @abc.abstractmethod
+    def key_words(self) -> Set[IKeyWord]:
         ...
 
     @abc.abstractmethod
@@ -36,5 +44,5 @@ class IPost(metaclass=abc.ABCMeta):
         ...
 
     @abc.abstractmethod
-    def likes(self) -> List[IMember]:
+    def likes(self) -> int:
         ...

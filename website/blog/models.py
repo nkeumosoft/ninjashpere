@@ -12,10 +12,21 @@ class Member(models.Model):
         return self.user.last_name
 
 
+class KeyWord(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+
+    def __str__(self):
+        return self.name
+
+
 class Post(models.Model):
+    post_type = models.CharField(
+        choices=[("Tech", "Technical"), ("Non-Tech", "Non Technical")], max_length=50, default="Technical"
+    )
     author = models.ForeignKey(Member, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     content = models.TextField()
+    key_words = models.ManyToManyField(KeyWord, related_name="post_keywords")
     picture = models.ImageField(upload_to=f"posts/{author}/", blank=True, null=True)
     published_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

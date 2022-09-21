@@ -1,7 +1,5 @@
 import abc
 from datetime import datetime
-from typing import List
-from uuid import UUID
 
 from blog.core.business.interface.imember import IMember
 from blog.core.business.interface.ipost import IPost
@@ -33,5 +31,5 @@ class IComment(metaclass=abc.ABCMeta):
         ...
 
     @abc.abstractmethod
-    def likes(self) -> List[IMember]:
+    def likes(self) -> int:
         ...

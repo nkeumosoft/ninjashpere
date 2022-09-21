@@ -1,9 +1,10 @@
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import Optional, List
+from typing import Optional, Set
 from uuid import UUID, uuid4
 
 from blog.core.business.interface.icomment import IComment
+from blog.core.business.interface.ikeyword import IKeyWord
 from blog.core.business.interface.imember import IMember
 from blog.core.business.interface.ipost import IPost
 
@@ -44,10 +45,30 @@ class MemberEntity(IMember):
 
 
 @dataclass
+class KeyWordEntity(IKeyWord):
+    _name: str
+    _id: int = field(default=-1)
+
+    @property
+    def id(self) -> int:
+        return self._id
+
+    @property
+    def name(self) -> str:
+        return self._name
+
+    @classmethod
+    def factory(cls, name: str, id=-1) -> "KeyWordEntity":
+        return cls(name, id)
+
+
+@dataclass
 class PostEntity(IPost):
     _title: str
     _content: str
+    _type: str
     _author: IMember
+    _key_words: Set[IKeyWord] = field(default_factory=set)
     _picture: str = field(default="")
     _published_at: datetime = field(default_factory=datetime.now)
     _updated_at: datetime = field(default_factory=datetime.now)
@@ -57,6 +78,10 @@ class PostEntity(IPost):
     @property
     def id(self) -> int:
         return self._id
+
+    @property
+    def post_type(self) -> str:
+        return self._type
 
     @property
     def title(self) -> str:
@@ -87,6 +112,10 @@ class PostEntity(IPost):
         return self._author
 
     @property
+    def key_words(self) -> Set[IKeyWord]:
+        return self._key_words
+
+    @property
     def published_at(self) -> datetime:
         return self._published_at
 
@@ -107,7 +136,9 @@ class PostEntity(IPost):
         cls,
         title: str,
         content: str,
+        post_type: str,
         author: IMember,
+        key_words: Optional[Set[IKeyWord]] = None,
         picture: str = "",
         published_at: Optional[datetime] = None,
         updated_at: Optional[datetime] = None,
@@ -117,7 +148,8 @@ class PostEntity(IPost):
         id = id or -1
         published_at = published_at or datetime.now()
         updated_at = updated_at or datetime.now()
-        return cls(title, content, author, picture, published_at, updated_at, likes, id)
+        key_words = key_words or set()
+        return cls(title, content, post_type, key_words, author, picture, published_at, updated_at, likes, id)
 
 
 @dataclass
