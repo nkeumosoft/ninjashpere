@@ -430,23 +430,23 @@ h3 {
         margin-top: 26px;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
     }
-    
+
     .navbar ul a li:hover+.sub-navbar .trak-grid img {
         height: 70px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar .trak-grid {
         gap: 20px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar h4 {
         font-size: 16px;
     }
-    
+
     .navbar ul a li:hover {
         text-decoration: underline;
     }
-    
+
     .sub-navbar-2 {
         background: white;
         padding: 20px;
@@ -457,12 +457,12 @@ h3 {
         border-radius: 0 0 10px 10px;
         margin-top: 26px;
     }
-    
+
     .trak-2-grid {
         display: grid;
         grid-template-columns: 100px 100px 100px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar-2 {
         display: block;
         background: white;
@@ -473,19 +473,19 @@ h3 {
         grid-template-columns: 1fr 1fr 1fr;
         margin-left: -817px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar-2 .trak-2-grid img {
         height: 70px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar-2 .trak-2-grid {
         gap: 20px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar-2 h4 {
         font-size: 16px;
     }
-    
+
     .navbar:hover {
         border-radius: 10px 10px 0 0;
         box-shadow: 10px 8px 6px rgba(0, 0, 0, 0.3);
@@ -501,28 +501,28 @@ h3 {
         height: 100%;
         overflow: hidden;
     }
-    
+
     .column:hover {
         animation: mymove;
     }
-    
+
     @keyframes mymove {
         0% {
             top: 1200px;
             position: relative;
         }
-    
+
         5% {
             top: 1100px;
             position: absolute;
         }
-    
+
         100% {
             top: 1000px;
             position: absolute;
         }
     }
-    
+
     .column:hover p {
         display: none;
     }

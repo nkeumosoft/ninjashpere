@@ -5,8 +5,12 @@
     NinjaSphere Web Development Services
 {% endblock %}
 
+{% block head %}
+    <link rel="stylesheet" href={% static 'websitecore/css/output-style.css' %}/>
+{% endblock %}
+
 {% block content %}
-    <main class="bg-slate-100">
+    <div class="bg-slate-100">
         <section class="flex justify-between h-screen p-10 max-w-7xl mx-auto">
             <div class="max-w-3xl space-y-6 self-center">
                 <h1 class="text-8xl font-display text-gray-900 font-bold">
@@ -227,6 +231,6 @@
                 </div>
             </section>
         </div>
-    </main>
+    </div>
 
 {% endblock %}

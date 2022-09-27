@@ -12,6 +12,14 @@ class HomeView(TemplateView):
         return render(request, self.template_name, context)
 
 
+class TalentView(TemplateView):
+    template_name = "websitecore/talent.html"
+
+    def get(self, request, *args, **kwargs):
+        context = {"navbar": "talent"}
+        return render(request, self.template_name, context)
+
+
 class CloudDevOpsView(View):
     template_name = "websitecore/cloud&devOps-service.html"
 
