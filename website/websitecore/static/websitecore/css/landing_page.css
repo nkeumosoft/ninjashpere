@@ -10,14 +10,14 @@ body {
 }
 
 .navbar {
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 200px;
-    margin: 10px 20px;
-    background: white;
     font-family: 'Lexend', sans-serif;
     font-weight: 300;
     padding: 5px;
     font-size: 15px;
+    height: 100px;
+    margin-top: 30px;
+    box-shadow:  2px 2px;
+    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar ul {
@@ -55,11 +55,10 @@ body {
 .sub-navbar {
     background: rgba(254, 251, 251, 0.75);
     padding: 20px;
-    width: 1223px;
+    width: 100%;
     gap: 0;
     display: flex;
     display: none;
-    border-radius: 0 0 10px 10px;
 }
 
 .trak-grid {
@@ -74,7 +73,7 @@ body {
     font-size: 9px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-left: -584px;
+    margin-left: -596px;
     margin-top: 25px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 }
@@ -98,11 +97,10 @@ body {
 .sub-navbar-2 {
     background: white;
     padding: 20px;
-    width: 1223px;
+    width: 100%;
     gap: 10px;
     display: grid;
     display: none;
-    border-radius: 0 0 10px 10px;
     margin-top: 25px;
 }
 
@@ -119,7 +117,7 @@ body {
     font-size: 9px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: -816px;
+    margin-left: -838px;
 }
 
 .navbar ul a li:hover+.sub-navbar-2 .trak-2-grid img {
@@ -134,16 +132,11 @@ body {
     font-size: 16px;
 }
 
-.navbar:hover {
-    border-radius: 10px 10px 0 0;
-    box-shadow: 10px 8px 6px rgba(0, 0, 0, 0.3);
-}
-
 .tresor {
-    background-image: url(../img/Front.jpg);
+    background-image: url(../img/Front.jpg) ;
     background-repeat: no-repeat;
     padding: 10px 0;
-    height: 1000px;
+    height: 600px;
     background-size: cover;
 }
 
@@ -430,23 +423,23 @@ h3 {
         margin-top: 26px;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
     }
-    
+
     .navbar ul a li:hover+.sub-navbar .trak-grid img {
         height: 70px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar .trak-grid {
         gap: 20px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar h4 {
         font-size: 16px;
     }
-    
+
     .navbar ul a li:hover {
         text-decoration: underline;
     }
-    
+
     .sub-navbar-2 {
         background: white;
         padding: 20px;
@@ -457,12 +450,12 @@ h3 {
         border-radius: 0 0 10px 10px;
         margin-top: 26px;
     }
-    
+
     .trak-2-grid {
         display: grid;
         grid-template-columns: 100px 100px 100px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar-2 {
         display: block;
         background: white;
@@ -473,19 +466,19 @@ h3 {
         grid-template-columns: 1fr 1fr 1fr;
         margin-left: -817px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar-2 .trak-2-grid img {
         height: 70px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar-2 .trak-2-grid {
         gap: 20px;
     }
-    
+
     .navbar ul a li:hover+.sub-navbar-2 h4 {
         font-size: 16px;
     }
-    
+
     .navbar:hover {
         border-radius: 10px 10px 0 0;
         box-shadow: 10px 8px 6px rgba(0, 0, 0, 0.3);
@@ -501,28 +494,28 @@ h3 {
         height: 100%;
         overflow: hidden;
     }
-    
+
     .column:hover {
         animation: mymove;
     }
-    
+
     @keyframes mymove {
         0% {
             top: 1200px;
             position: relative;
         }
-    
+
         5% {
             top: 1100px;
             position: absolute;
         }
-    
+
         100% {
             top: 1000px;
             position: absolute;
         }
     }
-    
+
     .column:hover p {
         display: none;
     }

@@ -1,6 +1,13 @@
 from django.urls import path
 
-from websitecore.views import CloudDevOpsView, MobileDevServiceView, WebDevServiceView, QualityAssuranceView, HomeView
+from websitecore.views import (
+    CloudDevOpsView,
+    MobileDevServiceView,
+    WebDevServiceView,
+    QualityAssuranceView,
+    HomeView,
+    TalentView,
+)
 
 urlpatterns = [
     path("", HomeView.as_view(), name="home"),
@@ -8,4 +15,5 @@ urlpatterns = [
     path("mobile-development-service/", MobileDevServiceView.as_view(), name="mobile_dev"),
     path("web-development-service/", WebDevServiceView.as_view(), name="web_dev"),
     path("quality-assurance/", QualityAssuranceView.as_view(), name="quality_assurance"),
+    path("talent/", TalentView.as_view(), name="talent"),
 ]
