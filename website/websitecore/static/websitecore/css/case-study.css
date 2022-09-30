@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    font-family: poppins;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -35px;
+    height: 28px;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: poppins;
+    padding-top: 20px;
+    list-style: none;
+
+}
+
+div.navbar li a {
+    text-decoration: none;
+    color: #003045;
+}
+
+div.nav {
+    color: white;
+}
+
+div.navbar a:hover {
+    border-bottom: solid 2px aqua;
+}
+
+.head {
+    background-image: url(/ninjashpere/website/websitecore/static/websitecore/img/case-study-images/dev2.jpeg);
+    padding-top: 30px;
+    margin-top: 30px;
+    color: #fff;
+}
+.title {
+    font-family: lexend;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.text {
+    font-family: souce sans pro;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 35px;
+    width: vw;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.case1 {
+    display: flex;
+    gap: 20px;
+}
+
+.case2 {
+    display: flex;
+    gap: 20px;
+}
+
+.case3 {
+    display: flex;
+    gap: 20px;
+}
+
+.case4 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2px;
+}
+
+.casst {
+    height: 400px;
+    margin-top: -50px;
+}
+
+a.lien {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 20px;
+    margin-bottom: -40px;
+}
+
+.get {
+    background: #003045;
+    border-radius: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.get a {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    margin-left: 30px;
+    padding-top: 15px;
+    position: absolute;
+    gap: 100px;
+
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.contain :hover {
+    border-bottom: solid 2px aqua;
+}
+
+.blog :hover {
+    border-bottom: solid 2px aqua;
+}
+
+div.icon :hover {
+    border-bottom: solid 2px aqua;
+
+}
+
+section.footer {
+    background-color: #003045;
+    color: white;
+    font-weight: 10px;
+    padding-top: 25px;
+}
+
+.getin {
+    color: white;
+    border-radius: 5px;
+    background-color: #003045;
+}
+
+.spa {
+    font-weight: 100px;
+    margin-left: 10px
+}
+
+.par {
+    color: #003045;
+    font-weight: bolder;
+}
+
+.par:hover {
+    border-bottom: solid 2px aqua;
+}
+
+.allcases {
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.ninjas {
+    margin-left: 170px;
+    margin-top: -35px;
+}
+
+.ninjas:hover {
+    border-bottom: solid 2px aqua;
+}
+
+.menu li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+
+    border-bottom: solid aqua 2px;
+}
+
+.logow {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icon {
+    font-weight: 100px;
+}
+
+.lien {
+    text-decoration: none;
+    color: #fff;
+    background-color: #003045;
+    padding: 5px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.imgg {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin-top: 60px;
+}
+
+.contact {
+    display: flex;
+    background-color: darkcyan;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    color: #fff;
+}
+
+input {
+    margin-left: 20px;
+}
+
+.name {
+    margin-left: 85px;
+    width: 250px;
+}
+
+.num {
+    margin-left: 75px;
+    width: 250px;
+}
+
+.sms {
+    margin-left: 48px;
+    width: 250px;
+}
+.email{
+    width: 250px;
+}
+.firstp {
+    font-weight: 800;
+    line-height: 1.5;
+    font-size: 40px;
+}
+
+.secondp {
+    font-size: 30px;
+}
+
+.bout {
+    color: #fff;
+    background-color: #003045;
+    padding: 20px;
+    border-radius: 25px;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 2px;
+}
+
+.simplecont {
+    padding: 20px;
+
+}
+
+.formulaire {
+    background-color: #fff;
+    color: #003045;
+    padding: 70px;
+    width: 700px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.pform {
+    font-size: 25px;
+}
+
+.pform2 {
+    font-size: 20px;
+}
+
+.call {
+    justify-content: space-around;
+    width: 500px;
+}
+
+.phone {
+    margin-left: 100px;
+    margin-top: -80px;
+
+}
+
+.tel:hover {
+    color: #003045;
+
+}
+
+
+
+
+@media  (max-width:500px ) {
+    .case1{
+        flex-direction: column;
+    }
+    .case2{
+        flex-direction: column;
+    }
+    .case3{
+        flex-direction: column;
+    }
+    .case4{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .formulaire{
+        flex-direction: column;
+        width: 500px;
+    }
+    .text{
+        width: 100%;
+    }
+    .casst{
+        width: 100%;
+    }
+}
