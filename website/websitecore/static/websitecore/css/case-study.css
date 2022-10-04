@@ -101,11 +101,10 @@ a.lien {
 }
 
 
-.menu {
+.menu ul {
     display: flex;
     margin-left: 30px;
     padding-top: 15px;
-    position: absolute;
     gap: 100px;
 
 }
@@ -114,6 +113,11 @@ a.lien {
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    
+}
+.navbarend{
+    background-color: #003045;
+    color: #fff;
 }
 
 .contain :hover {
@@ -142,14 +146,14 @@ section.footer {
     background-color: #003045;
 }
 
-.spa {
+.span {
     font-weight: 100px;
     margin-left: 10px
 }
 
 .par {
     color: #003045;
-    font-weight: bolder;
+    font-weight: 800;
 }
 
 .par:hover {
@@ -195,7 +199,7 @@ section.footer {
     font-weight: 100px;
 }
 
-.lien {
+.btn-viewcase{
     text-decoration: none;
     color: #fff;
     background-color: #003045;
@@ -275,13 +279,11 @@ input {
     font-size: 25px;
 }
 
-.pform {
-    font-size: 25px;
+.titre-formulaire {
+    font-size: 28px;
+    font-weight: 700;
 }
 
-.pform2 {
-    font-size: 20px;
-}
 
 .call {
     justify-content: space-around;
