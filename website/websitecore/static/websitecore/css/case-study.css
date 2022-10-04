@@ -4,18 +4,24 @@
     margin: auto;
 }
 
-.navbar {
+div.navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: -35px;
     height: 28px;
-    font-weight: bolder;
+    font-weight: 800;
     font-size: 16px;
     line-height: 28px;
     font-family: poppins;
     padding-top: 20px;
     list-style: none;
 
+}
+nav{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    
 }
 
 div.navbar li a {
@@ -45,7 +51,11 @@ div.navbar a:hover {
     margin-top: 20px;
 
 }
-
+.titre1{
+    font-family: lexend;
+    margin-left: auto;
+    margin-right: auto;
+}
 .text {
     font-family: souce sans pro;
     font-style: normal;
@@ -90,17 +100,6 @@ a.lien {
     margin-bottom: -40px;
 }
 
-.get {
-    background: #003045;
-    border-radius: 10px;
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.get a {
-    list-style: none;
-}
 
 .menu {
     display: flex;
@@ -137,7 +136,7 @@ section.footer {
     padding-top: 25px;
 }
 
-.getin {
+.contact-btn {
     color: white;
     border-radius: 5px;
     background-color: #003045;
