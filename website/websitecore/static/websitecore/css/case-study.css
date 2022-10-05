@@ -304,25 +304,31 @@ input {
 
 
 
-@media  (max-width:500px ) {
+@media  (max-width:320px ) {
     .case1{
         flex-direction: column;
+        width: 300px;
     }
     .case2{
         flex-direction: column;
+        width: 300px;
     }
     .case3{
         flex-direction: column;
+        width: 300px;
     }
     .case4{
         flex-direction: column;
+        width: 300px;
+
     }
     .contact{
         flex-direction: column;
+        width: 300px;
     }
     .formulaire{
         flex-direction: column;
-        width: 500px;
+        width: 320px;
     }
     .text{
         width: 100%;
@@ -330,4 +336,24 @@ input {
     .casst{
         width: 100%;
     }
+    .simplecont{
+        width: 300px;
+        background-color: blueviolet;
+    }
+ div.navbar{
+    justify-content: center;
+    display: block;
+ }
+ nav{
+    margin: auto;
+    justify-content: space-around;
+    flex-direction: column;
+    display: block;
+ }
+ .head{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5px;;
+ }
 }
