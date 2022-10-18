@@ -7,7 +7,7 @@ body {
 }
 
 .hero {
-    background-image: url(./image/Front.jpg);
+    background-image: url(../../websitecore/img/hero-img.jpg);
     background-repeat: no-repeat;
     height: 700px;
     background-size: cover;
@@ -112,7 +112,7 @@ body {
 }
 
 .background-img {
-    background-image: url(./image/Rectangle\ 10.png);
+    background-image: url(../../websitecore/img/about-us-bg-img.png);
     height: 470px;
     background-attachment: fixed;
     background-position: center;
