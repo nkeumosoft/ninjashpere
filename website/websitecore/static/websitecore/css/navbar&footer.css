@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background: white;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    padding: 5px;
+    font-size: 15px;
+    margin: 30px;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 5px;
+}
+
+nav ul li a {
+    color: #003045;
+    font-family: 'Lexend', sans-serif;
+    height: 100%;
+}
+
+.computer-tablet-img img {
+    height: 50px;
+    margin-right: 200px;
+    margin-left: 20px;
+}
+
+nav ul button {
+    margin-right: 15px;
+}
+
+#butt {
+    background-color: #003045;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 30px;
+}
+
+.sub-navbar-service {
+    background: rgba(254, 251, 251, 0.75);
+    padding: 20px;
+    width: 1282px;
+    background: white;
+    position: absolute;
+    font-size: 9px;
+    margin-left: -620px;
+    margin-top: 25px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    background-attachment: fixed;
+    display: none;
+}
+
+.nav-service-grid {
+    display: grid;
+    grid-template-columns: 90px 90px;
+}
+
+.nav-item-with-sub-navigation {
+    position: relative;
+    height: 100%;
+    margin-bottom: -25px;
+}
+
+nav ul .nav-item-with-sub-navigation:hover .sub-navbar-service {
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav ul .nav-item-with-sub-navigation:hover .sub-navbar-study {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav ul .nav-item-with-sub-navigation:hover .sub-navbar-service .nav-service-grid img {
+    height: 70px;
+}
+
+nav ul .nav-item-with-sub-navigation:hover .sub-navbar-service .nav-service-grid {
+    gap: 20px;
+}
+
+nav ul .nav-item-with-sub-navigation:hover .sub-navbar-service h4 {
+    font-size: 16px;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+nav ul .nav-item-with-sub-navigation:hover .sub-navbar-study {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sub-navbar-study {
+    background: white;
+    padding: 20px;
+    width: 1312px;
+    gap: 10px;
+    display: grid;
+    display: none;
+    margin-top: 25px;
+}
+
+.nav-study-grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+
+nav ul .nav-item-with-sub-navigation:hover .sub-navbar-study {
+    display: block;
+    background: white;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    font-size: 9px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: -880px;
+}
+
+nav ul .nav-item-with-sub-navigation:hover .sub-navbar-study .nav-study-grid img {
+    height: 70px;
+}
+
+nav ul .nav-item-with-sub-navigation:hover .sub-navbar-study .nav-study-grid {
+    gap: 20px;
+}
+
+nav ul .nav-item-with-sub-navigation:hover .sub-navbar-study h4 {
+    font-size: 16px;
+}
+
+.phone-img {
+    display: none;
+}
+
+footer {
+    background: #003045;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+footer ul li {
+    font-size: 16px;
+}
+
+footer ul h5 {
+    font-size: 18px;
+}
+
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-top h5 {
+    margin-left: 40px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.footer-buttom {
+    padding: 20px;
+    border-top: 1px dotted white;
+}
+
+section img {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.footer-buttom p {
+    font-size: 10px;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color: white;
+    position: absolute;
+    font-family: 'Lexend', sans-serif;
+}
+
+ol li {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ol h5 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 430px) {
+
+    nav ul,
+    .computer-tablet-img {
+        display: none;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .phone-img {
+        height: 40px;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .phone-img img {
+        height: 80px;
+        width: 120px;
+        margin-top: -20px;
+        margin-left: -2px;
+    }
+
+    .phone-img svg {
+        height: 40px;
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 500px) {
+
+    nav ul,
+    .computer-tablet-img {
+        display: none;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .phone-img {
+        height: 40px;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .phone-img img {
+        height: 80px;
+        width: 120px;
+        margin-top: -20px;
+        margin-left: -2px;
+    }
+
+    .phone-img svg {
+        height: 40px;
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 850px) {
+
+    nav ul,
+    .computer-tablet-img {
+        display: none;
+    }
+
+    .phone-img {
+        height: 70px;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .phone-img img {
+        height: 110px;
+        width: 180px;
+        margin-top: -20px;
+        margin-left: -2px;
+    }
+
+    .phone-img svg {
+        height: 40px;
+        margin-left: 500px;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1040px) {
+
+    nav ul,
+    .computer-tablet-img {
+        display: none;
+    }
+
+    .phone-img {
+        height: 70px;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .phone-img img {
+        height: 110px;
+        width: 180px;
+        margin-top: -20px;
+        margin-left: -1px;
+    }
+
+    .phone-img svg {
+        height: 40px;
+        margin-left: 720px;
+    }
+}

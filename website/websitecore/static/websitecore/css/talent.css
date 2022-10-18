@@ -1,12 +1,48 @@
- .talent-content p{
-    text-align: center;
-    font-size: 25px;
-    margin-top: 100px;
-    font-family: 'Source Sans Pro', sans-serif;
+body {
+    background-color: white;
+    margin: 0;
 }
-.talent-content img{
+
+article p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+article img {
     height: 300px;
     margin-left: 400px;
-    margin-top: 100px;
+    margin-top: 30px;
     border-radius: 100%;
-}  
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (max-width: 430px) {
+    article img {
+        margin-left: 0;
+        width: 375px;
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 500px) {
+    article img {
+        width: 428px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 850px) {
+    article img {
+        width: 600px;
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1040px) {
+    article img {
+        width: 900px;
+        margin-left: 50px;
+    }
+}
