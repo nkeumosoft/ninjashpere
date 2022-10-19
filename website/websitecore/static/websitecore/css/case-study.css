@@ -1,193 +1,180 @@
 * {
     box-sizing: content-box;
+
 }
 
-div.navbar {
+.titre-principal {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+}
+nav ul {
     display: flex;
-    justify-content: space-between;
-    height: 28px;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 28px;
-    font-family: poppins;
-    padding-top: 20px;
     list-style: none;
-    margin-left: 70px;
+    text-decoration: none;
+    justify-content: space-around;
 }
 
-.logo {
-    height: 25px;
-}
+.navbar a {
 
-nav {
-    display: flex;
-    gap: 90px;
-
-}
-
-.search-bar-icon {
-    height: 20px;
-}
-
-div.navbar li a {
     text-decoration: none;
     color: #003045;
 }
 
-div.nav {
-    color: white;
-}
-
-div.navbar a:hover {
-    border-bottom: solid 2px aqua;
-}
-
 .head {
     background-image: url(../../../static/websitecore/img/case-study-images/dev2.jpeg);
-    padding-top: 30px;
-    margin-top: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.contact-btn {
+    background-color: #003045;
+    color: white;
+    border-radius: 10px;
+    background-color: #003045;
+    padding-bottom: 10px, 10px, 30px;
+
+}
+
+.contact-btn a {
     color: #fff;
 }
 
-.title {
-    font-family: lexend;
-    font-size: 50px;
+.case-study-devise {
     text-align: center;
-    margin-left: 70px;
-    margin-top: 20px;
-
+    margin-top: -20px;
 }
 
-.titre1 {
-    font-family: lexend;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.description {
-    font-family: souce sans pro;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 35px;
-    width: vw;
-    color: #000000;
-    margin-left: 20px;
+.case-study-img {
+    width: 50vw;
+    height: px;
 }
 
 .case-study-img-plus-description {
     display: flex;
-    gap: 20px;
 }
 
-
-.case-study-img {
-    height: 400px;
-    margin-top: -50px;
+.description {
+    width: 60%;
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 60px;
 }
 
-a.lien {
-    text-decoration: none;
-    font-size: 15px;
-    padding: 15px;
-    padding-bottom: 20px;
-    margin-bottom: -40px;
-}
-
-
-.menu ul {
-    display: flex;
-    margin-left: 30px;
-    padding-top: 15px;
-    gap: 100px;
-
-}
-
-div.foot {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-
-}
-
-section.navbarend {
+.btn-viewcase {
     background-color: #003045;
     color: #fff;
-    margin: 0px 70px 0px;
+    padding: 10px 10px 20px;
+    border-radius: 25px;
+    background-image: linear-gradient(to left, #023E84, aqua);
 }
 
-.contain :hover {
-    border-bottom: solid 2px aqua;
+.title {
+
+    font-size: 40px;
+    margin-left: 40px;
 }
 
-.blog :hover {
-    border-bottom: solid 2px aqua;
+.bloc-contact-et-formulaire {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkcyan;
+    padding: 50px 15px 40px;
+    color: #fff;
+    margin-top: 15px;
 }
 
-div.icon :hover {
-    border-bottom: solid 2px aqua;
-
-}
-
-section.footer {
-    background-color: #003045;
-    color: white;
-    font-weight: 10px;
-    padding-top: 25px;
-
-}
-
-.contact-btn {
-    color: white;
+.formulaire {
+    background-color: #fff;
+    color: #003045;
+    padding-top: 30px;
+    width: 65%;
+    text-align: center;
     border-radius: 10px;
-    background-color: #003045;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 25px;
+}
+.name {
+    margin-left: 90px;
+    width: 250px;
+}
+.num {
+    margin-left: 85px;
+    width: 250px;
+}
+.sms {
+    margin-left: 58px;
+    width: 250px;
 }
 
-.numero {
-    font-weight: 100px;
+.email {
+    width: 250px;
     margin-left: 10px;
 }
 
-.all-cases {
-    padding-top: 15px;
-    padding-left: 70px;
-    padding-right: 70px;
+.mon-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-left: -200px;
 }
-
-.ninjas {
-    margin-left: 170px;
-    margin-top: -35px;
+.simplecontact {
+    text-align: center;
+    padding: 100px 15px 0px;
 }
-
-.ninjas:hover {
-    border-bottom: solid 2px aqua;
+.simplecontact-sms {
+    margin-top: -60px;
+    margin-left: 50px;
 }
-
-.menu li {
+.firstp {
+    font-weight: 800;
+    line-height: 1.5;
+    font-size: 40px;
+}
+.secondp {
+    font-size: 30px;
+}
+.menu ul {
     display: flex;
-    text-decoration: none;
+    justify-content: space-around;
     list-style: none;
-
 }
-
 .menu a {
     text-decoration: none;
     color: white;
 }
 
 .menu a:hover {
+    border-bottom: solid 2px aqua;
+}
 
-    border-bottom: solid aqua 2px;
+section.navbarend {
+    background-color: #003045;
+    color: #fff;
+}
+
+div.foot {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.contain :hover {
+    border-bottom: solid 2px aqua;
+}
+.blog :hover {
+    border-bottom: solid 2px aqua;
+}
+
+div.icon :hover {
+    border-bottom: solid 2px aqua;
 }
 
 .logow {
-
-    margin-top: 20px;
-    padding-bottom: 20px;
+    
+    margin-bottom: 30px;
+    margin-left: 10px;
     height: 20px;
 }
 
@@ -196,175 +183,87 @@ section.footer {
     margin-top: -20px;
 }
 
-.btn-viewcase {
-    text-decoration: none;
-    color: #fff;
-    background-image: linear-gradient(to left, #023E84, #48cae4);
-    padding: 5px;
-    border-radius: 25px;
-    margin-top: 20px;
+.infos-localisation span {
+    font-size: 15px;
 }
 
-.mon-image {
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    margin-top: 60px;
-}
-
-.contact {
-    display: flex;
-    background-color: darkcyan;
-    padding-bottom: 40px;
-    padding-top: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #fff;
-    margin-left: 70px;
-    margin-right: 70px;
-}
-
-input {
-    margin-left: 20px;
-}
-
-.name {
-    margin-left: 85px;
-    width: 250px;
-}
-
-.num {
-    margin-left: 75px;
-    width: 250px;
-}
-
-.sms {
-    margin-left: 48px;
-    width: 250px;
-}
-
-.email {
-    width: 250px;
-}
-
-.firstp {
-    font-weight: 800;
-    line-height: 1.5;
-    font-size: 40px;
-}
-
-.secondp {
-    font-size: 30px;
+.copyright {
+    margin-left: 200px;
 }
 
 .bouton {
-    color: #fff;
+    width:100px;
     background-color: #003045;
-    padding: 20px;
-    border-radius: 25px;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 2px;
-    cursor: pointer;
+    color: #fff;
 }
 
-.simplecont {
-    padding: 20px;
+/* les medias queries */
 
-}
-
-.formulaire {
-    background-color: #fff;
-    color: #003045;
-    padding: 70px;
-   width: 60%; 
-    text-align: center;
-    border-radius: 10px;
-    font-size: 25px;
-}
-
-.titre-formulaire {
-    font-size: 28px;
-    font-weight: 700;
-}
-
-
-.call {
-    justify-content: space-around;
-    width: 400px;
-}
-
-.contact-sms {
-    margin-left: 100px;
-    margin-top: -80px;
-
-}
-
-.tel:hover {
-    color: #003045;
-}
-
-
-
-
-
-@media (max-width:420px) {
+@media (max-width:320px) {
     .case-study-img-plus-description {
         flex-direction: column;
-        width: 300px;
     }
 
-    .contact {
-        flex-direction: column;
+    .case-study-img {
         width: 100%;
+        margin-left: 20px;
+        flex-shrink: 2;
+    
+    }
+
+    .bloc-contact-et-formulaire {
+        flex-direction: column;
     }
 
     .formulaire {
-        flex-direction: column;
         width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .name {
+        margin-left: 0px;
+        width: 250px;
+    }
+
+    .num {
+        margin-left: 0px;
+        width: 250px;
+    }
+
+    .sms {
+        margin-left: 0px;
+        width: 250px;
+    }
+
+    nav ul {
+        display: block;
     }
 
     .description {
         width: 100%;
     }
 
-    .case-study-img {
-        width: 100%;
-        height: 300px;
-    }
-
-    .simplecont {
-        width: 100%;
-        background-color: blueviolet;
-    }
-
-    div.navbar {
-        width: 100%;
-        margin-top: 90px;
-        gap: 0px;
-    }
-
-    .search-bar-icon-svg {
-        height: 5px;
-        width: 5px;
-    }
-
-    nav {
-
-        justify-content: space-around;
+    .menu ul {
         flex-direction: column;
-        gap: 0px;
+        align-items: center;
     }
 
-    .call {
+    .title {
+        margin-top: 00px;
+    }
+
+    div.foot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright {
+        text-align:left;
+        margin-right: 10px;
+        margin-left: 0px;
         width: 100%;
-    }
-
-    .head {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 5px;
-width: 400px;
     }
 }
