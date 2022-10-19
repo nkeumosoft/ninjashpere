@@ -1,20 +1,25 @@
 * {
     box-sizing: content-box;
-
+flex-wrap: wrap;
 }
 
 .titre-principal {
     text-align: center;
     padding-top: 40px;
     font-size: 40px;
+    font-family: lexend;
 }
 nav ul {
     display: flex;
     list-style: none;
     text-decoration: none;
     justify-content: space-around;
+    font-family: poppins;
 }
-
+.navbar ul .contact-btn{
+    color: #fff;
+    padding: 5px 10px 10px;
+}
 .navbar a {
 
     text-decoration: none;
@@ -27,6 +32,7 @@ nav ul {
     background-size: 100%;
     color: #fff;
     padding-bottom: 15px;
+    font-family: lexend;
 }
 
 .contact-btn {
@@ -34,12 +40,7 @@ nav ul {
     color: white;
     border-radius: 10px;
     background-color: #003045;
-    padding-bottom: 10px, 10px, 30px;
-
-}
-
-.contact-btn a {
-    color: #fff;
+    
 }
 
 .case-study-devise {
@@ -62,6 +63,7 @@ nav ul {
     font-size: 20px;
     margin-left: 50px;
     margin-top: 60px;
+    font-family: poppins;
 }
 
 .btn-viewcase {
@@ -70,6 +72,7 @@ nav ul {
     padding: 10px 10px 20px;
     border-radius: 25px;
     background-image: linear-gradient(to left, #023E84, aqua);
+    text-decoration: none;
 }
 
 .title {
@@ -244,6 +247,7 @@ div.icon :hover {
 
     .description {
         width: 100%;
+        margin-left: 18px;
     }
 
     .menu ul {
