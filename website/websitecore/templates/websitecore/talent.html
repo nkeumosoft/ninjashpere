@@ -2,18 +2,24 @@
 {% load static %}
 
 {% block title %}
-    Still in construction
+    NinjaSphere - Talent
 {% endblock %}
 
 {% block head %}
     <link rel="stylesheet" href={% static 'websitecore/css/talent.css' %}>
-    <link rel="stylesheet" href={% static 'websitecore/css/landing_page.css' %} >
+
 {% endblock %}
 
 {% block content %}
-    <img alt="picture" src={% static 'websitecore/img/ingenierie-plate-construction-illustree_23-2148892788.webp' %}/>
-    <p>
-        Our web side will be available in less than no time to be said with out standing content.
-    </p>
+    <article class='talent-area-container'>
+        <section>
+            <div class='talent-hero-img'>
+                <img src={% static 'websitecore/img/talent-construction-img.webp' %} alt="image illustrating this web page is in construction">
+            </div>
+            <p>
+                This web page is under construction and will be available in no time with some amazing talents.
+            </p>
+        </section>
+    </article>
 
 {% endblock %}

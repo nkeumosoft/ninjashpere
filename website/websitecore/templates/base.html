@@ -11,171 +11,179 @@
             NinjaSphere
         {% endblock %}
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;700;900&family=Poppins:wght@500;600&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href={% static 'websitecore/css/navbar&footer.css' %}>
     {% block head %}
 
     {% endblock %}
 </head>
 <body>
-<header>
-    <div class="phone-img">
-            <img alt="logo" src={% static 'websitecore/img/logo/ninjasphere-logo-dark-xs.jpg' %} />
-        </div>
-    <div class="navbar">
+    <header>
+        <nav>
+            <div class="computer-tablet-img">
+                <img src={% static 'websitecore/img/logo/ninjaSphere-logo-dark.jpg' %} alt="NinjaSphere logo">
+            </div>
             <ul>
-                <img alt="logo" src={% static 'websitecore/img/logo/ninjaSphere-logo-dark.jpg' %} />
-                <a href={% url 'core:home' %}>
-                    <li>HOME</li>
-                </a>
-                <a href="">
-                    <li>SERVICES</li>
-                    <div class="sub-navbar">
-                        <div class="trak" style="margin-left: 50px;">
-                            <h4>Web development</h4>
-                            <div class="trak-grid">
-                                <img alt="img" src={% static 'websitecore/img/fotis-fotopoulos-DuHKoV44prg-unsplash11.png' %} />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus, urna
+                <li>
+                    <a href={% url 'core:home' %}>HOME</a>
+                </li>
+                <li class="nav-item-with-sub-navigation">
+                    <a href="">SERVICES</a>
+                    <div class="sub-navbar-service">
+                        <div class="nav-service" style="margin-left: 50px;">
+                            <h4><a href="">Web Development</a></h4>
+                            <div class="nav-service-grid">
+                                <img src={% static 'websitecore/img/service-nav-img-1.png' %}
+                                    alt="two screens with different graphics">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
+                                    metus,
+                                    urna
                                     lectus convallis massa, donec. </p>
                             </div>
                         </div>
-                        <div class="trak">
-                            <h4>Mobile development</h4>
-                            <div class="trak-grid">
-                                <img alt="img" src={% static 'websitecore/img/olaf-val-UTk9cXzYWAg-unsplash_1.png' %} />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus, urna
+                        <div class="nav-service">
+                            <h4>mobile development</h4>
+                            <div class="nav-service-grid">
+                                <img src={% static 'websitecore/img/service-nav-img-2.png' %} alt="computer and a phone">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
+                                    metus,
+                                    urna
                                     lectus convallis massa, donec. </p>
                             </div>
                         </div>
-                        <div class="trak">
-                            <h4>Cloud & DevOps</h4>
-                            <div class="trak-grid">
-                                <img alt="img" src={% static 'websitecore/img/joshua-aragon-FGXqbqbGt5o-unsplash_1.png' %} />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus, urna
+                        <div class="nav-service">
+                            <h4>Cloud&DevOps</h4>
+                            <div class="nav-service-grid">
+                                <img src={% static 'websitecore/img/service-nav-img-3.png' %} alt="computer on atable ">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
+                                    metus,
+                                    urna
                                     lectus convallis massa, donec. </p>
                             </div>
                         </div>
-                        <div class="trak">
+                        <div class="nav-service">
                             <h4>Quality Assurance</h4>
-                            <div class="trak-grid">
-                                <img alt="img" src={% static 'websitecore/img/john-schnobrich-2FPjlAyMQTA-unsplash_1.png' %} />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus, urna
+                            <div class="nav-service-grid">
+                                <img src={% static 'websitecore/img/service-nav-img-4.png' %}
+                                    alt="three individuals working on a computer">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
+                                    metus,
+                                    urna
                                     lectus convallis massa, donec. </p>
                             </div>
                         </div>
                     </div>
-                </a>
-                <a>
-                    <li href="">CASE STUDY</li>
-                </a>
-                <a href="">
-                    <li>KNOWLEDGE</li>
-                    <div class="sub-navbar-2">
-                        <div class="trak-2" style="margin-left: 80px;">
+                </li>
+                <li>
+                    <a href="">KNOWLEDGE</a>
+                </li>
+                <li class="nav-item-with-sub-navigation">
+                    <a href="">CASE STUDY</a>
+                    <div class="sub-navbar-study">
+                        <div class="nav-study" style="margin-left: 200px;">
                             <h4>Blog</h4>
-                            <div class="trak-2-grid">
-                                <img alt="img" src={% static 'websitecore/img/aaron-burden-xG8IQMqMITM-unsplash_1.png' %} />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus, urna
+                            <div class="nav-study-grid">
+                                <img src={% static 'websitecore/img/study-nav-img-1.png' %} alt="pen on a book">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus,
+                                    urna
                                     lectus convallis massa, donec. </p>
                             </div>
                         </div>
-                        <div class="trak-2">
+                        <div class="nav-study">
                             <h4>SEO</h4>
-                            <div class="trak-2-grid">
-                                <img alt="img" src={% static 'websitecore/img/nisonco-pr-and-seo-yIRdUr6hIvQ-unsplash_1.png' %} />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus, urna
+                            <div class="nav-study-grid">
+                                <img src={% static 'websitecore/img/study-nav-img-2.png' %} alt="three dominos">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus,
+                                    urna
                                     lectus convallis massa, donec. </p>
                             </div>
                         </div>
-                        <div class="trak-2">
+                        <div class="nav-study">
                             <h4>Content Writing</h4>
-                            <div class="trak-2-grid">
-                                <img alt="img" src={% static 'websitecore/img/kenny-eliason-3GZNPBLImWc-unsplash_1.png' %} />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus, urna
+                            <div class="nav-study-grid">
+                                <img src={% static 'websitecore/img/study-nav-img-3.png' %} alt="man typing on a PC">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus,
+                                    urna
                                     lectus convallis massa, donec. </p>
                             </div>
                         </div>
                     </div>
-                </a>
-                <a href={% url 'core:talent' %}>
-                    <li>TALENT</li>
-                </a>
-                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </li>
+                <li>
+                    <a href={% url 'core:talent' %}>TALENT</a>
+                </li>
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
                     <path
                         d="M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z"
                         stroke="black" stroke-width="2" stroke-linecap="round" />
                 </svg>
                 <button id="butt">Get in touch</button>
             </ul>
-        </div>
-</header>
-{% block tresor %}
+        </nav>
 
-{% endblock %}
-<main>
-{% block content %}
+    </header>
+    <main>
+    {% block content %}
 
 
-{% endblock %}
-</main>
-<footer>
+    {% endblock %}
+    </main>
+
+    <footer>
         <div class="footer-top">
-            <ul>
-                <h5>PRESENTATION</h5>
-            </ul>
-            <ul>
-                <h5>SERVICES</h5>
-                <li>Web development</li>
-                <li>Mobile development</li>
-                <li>Cloud & DevOps</li>
-                <li>Quality Assurance</li>
-            </ul>
-            <ul>
-                <h5>KNOWLEDGE</h5>
-                <li>Blog</li>
-                <li>SEO</li>
-                <li>Content Writing</li>
-            </ul>
-            <ul>
-                <h5>TALENT</h5>
-            </ul>
-            <ol>
-                <h5>Yaoundé</h5>
-                <style>
-                    ol li {
-                        font-size: 10px;
-                        display: flex;
-                        align-items: center;
-                        gap: 10px;
-                    }
+            <section class="footer-logo">
+                <img src={% static 'websitecore/img/logo/ninjasphere-logo-white.PNG' %} alt="NinjaSphere logo">
+            </section>
 
-                    ol h5 {
-                        margin-top: 30px;
-                        font-size: 20px;
-                    }
-                </style>
-                <li> <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M7.86406 18.525C9.73438 16.1426 14 10.3684 14 7.125C14 3.19141 10.8646 0 7 0C3.13542 0 0 3.19141 0 7.125C0 10.3684 4.26562 16.1426 6.13594 18.525C6.58437 19.0928 7.41562 19.0928 7.86406 18.525ZM7 9.5C5.71302 9.5 4.66667 8.43496 4.66667 7.125C4.66667 5.81504 5.71302 4.75 7 4.75C8.28698 4.75 9.33333 5.81504 9.33333 7.125C9.33333 8.43496 8.28698 9.5 7 9.5Z"
-                            fill="#F8F8F8" />
-                    </svg>
-                    Rond point Express</li>
-                <li style="padding-left: 25px;"> Biyem Assi</li>
-                <li> <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.625 6.71876H14.4375C14.4362 5.61684 13.9979 4.56041 13.2188 3.78123C12.4396 3.00206 11.3832 2.56376 10.2812 2.56251V1.37501C11.698 1.37658 13.0563 1.94008 14.0581 2.94189C15.0599 3.9437 15.6234 5.30199 15.625 6.71876ZM11.0727 11.7549L12.4027 10.4249C12.5807 10.2469 12.8071 10.125 13.0537 10.0743C13.3004 10.0236 13.5565 10.0465 13.7903 10.1399L15.41 10.7883C15.6488 10.8838 15.8534 11.0487 15.9976 11.2616C16.1417 11.4746 16.2187 11.7258 16.2187 11.9829V14.9285C16.2191 15.1036 16.1838 15.2769 16.1149 15.4379C16.0461 15.5988 15.945 15.744 15.8181 15.8646C15.6911 15.9851 15.5409 16.0785 15.3766 16.139C15.2123 16.1995 15.0374 16.2258 14.8626 16.2164C3.50892 15.5098 1.21586 5.89344 0.790137 2.211C0.769518 2.03098 0.787247 1.84862 0.842158 1.67594C0.897068 1.50326 0.987916 1.34415 1.10873 1.2091C1.22954 1.07404 1.37757 0.966093 1.54309 0.892352C1.70861 0.818611 1.88787 0.780749 2.06907 0.781255H4.96242C5.21955 0.781247 5.47079 0.858283 5.68373 1.00243C5.89666 1.14657 6.06152 1.35121 6.15704 1.58994L6.80482 3.20969C6.89831 3.4435 6.92113 3.69959 6.87047 3.94624C6.81981 4.19289 6.69789 4.41926 6.51982 4.59729L5.18982 5.92729C5.18982 5.92729 5.92726 11.1119 11.0727 11.7549Z"
-                            fill="#F8F8F8" />
-                    </svg>
-                    +237 000 000 000 000</li>
-                <li><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M9.17225 4.16878C10.6228 4.16878 11.9896 4.81181 12.9912 5.81703V5.82C12.9912 5.33728 13.316 4.97212 13.7649 4.97212H13.8789C14.5872 4.97212 14.7292 5.64009 14.7292 5.85087L14.7321 13.3529C14.6828 13.8445 15.2398 14.0987 15.5491 13.7828C16.7515 12.546 18.1925 7.41837 14.8004 4.44962C11.6369 1.67859 7.391 2.13637 5.13356 3.692C2.73422 5.34975 1.20056 9.0114 2.69028 12.4528C4.31715 16.2047 8.968 17.3239 11.7361 16.2077C13.1373 15.6418 13.7833 17.5335 12.3268 18.1528C10.1317 19.0891 4.01434 18.9935 1.15722 14.0458C-0.773065 10.7036 -0.670941 4.82428 4.45075 1.77834C8.36534 -0.553315 13.5304 0.0926851 16.644 3.34347C19.8977 6.74506 19.7095 13.1095 16.533 15.5836C15.0943 16.7088 12.958 15.6145 12.9734 13.9752L12.9574 13.4408C11.9557 14.4329 10.6228 15.0148 9.17225 15.0148C6.30265 15.0148 3.77625 12.4878 3.77625 9.62118C3.77625 6.72368 6.30265 4.16997 9.17225 4.16997V4.16878ZM12.7817 9.41397C12.673 7.31387 11.1144 6.04918 9.23103 6.04918H9.15978C6.98903 6.04918 5.78312 7.75918 5.78312 9.69778C5.78312 11.8715 7.23959 13.2442 9.15087 13.2442C11.2842 13.2442 12.6849 11.6833 12.787 9.83671L12.7817 9.41397Z"
-                            fill="#F8F8F8" />
-                    </svg>
-                    info@ninjasphere.cm</li>
-                <li style="padding-left: 30px;">Follow us</li>
-            </ol>
+            <section>
+                <h5>SERVICES</h5>
+                <ul>
+                    <li>Web development</li>
+                    <li>Mobile development</li>
+                    <li>Cloud & DevOps</li>
+                    <li>Quality Assurance</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>KNOWLEDGE</h5>
+                <ul>
+                    <li>Blog</li>
+                    <li>SEO</li>
+                    <li>Content Writing</li>
+                </ul>
+            </section>
+
+            <section>
+                <h5>Location</h5>
+                <ol>
+                    <li> <svg width="14" height="19" viewBox="0 0 14 19" fill="none">
+                            <path
+                                d="M7.86406 18.525C9.73438 16.1426 14 10.3684 14 7.125C14 3.19141 10.8646 0 7 0C3.13542 0 0 3.19141 0 7.125C0 10.3684 4.26562 16.1426 6.13594 18.525C6.58437 19.0928 7.41562 19.0928 7.86406 18.525ZM7 9.5C5.71302 9.5 4.66667 8.43496 4.66667 7.125C4.66667 5.81504 5.71302 4.75 7 4.75C8.28698 4.75 9.33333 5.81504 9.33333 7.125C9.33333 8.43496 8.28698 9.5 7 9.5Z"
+                                fill="#F8F8F8" />
+                        </svg>
+                        Rond point Express</li>
+                    <li style="padding-left: 25px;"> Biyem Assi</li>
+                    <li> <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <path
+                                d="M15.625 6.71876H14.4375C14.4362 5.61684 13.9979 4.56041 13.2188 3.78123C12.4396 3.00206 11.3832 2.56376 10.2812 2.56251V1.37501C11.698 1.37658 13.0563 1.94008 14.0581 2.94189C15.0599 3.9437 15.6234 5.30199 15.625 6.71876ZM11.0727 11.7549L12.4027 10.4249C12.5807 10.2469 12.8071 10.125 13.0537 10.0743C13.3004 10.0236 13.5565 10.0465 13.7903 10.1399L15.41 10.7883C15.6488 10.8838 15.8534 11.0487 15.9976 11.2616C16.1417 11.4746 16.2187 11.7258 16.2187 11.9829V14.9285C16.2191 15.1036 16.1838 15.2769 16.1149 15.4379C16.0461 15.5988 15.945 15.744 15.8181 15.8646C15.6911 15.9851 15.5409 16.0785 15.3766 16.139C15.2123 16.1995 15.0374 16.2258 14.8626 16.2164C3.50892 15.5098 1.21586 5.89344 0.790137 2.211C0.769518 2.03098 0.787247 1.84862 0.842158 1.67594C0.897068 1.50326 0.987916 1.34415 1.10873 1.2091C1.22954 1.07404 1.37757 0.966093 1.54309 0.892352C1.70861 0.818611 1.88787 0.780749 2.06907 0.781255H4.96242C5.21955 0.781247 5.47079 0.858283 5.68373 1.00243C5.89666 1.14657 6.06152 1.35121 6.15704 1.58994L6.80482 3.20969C6.89831 3.4435 6.92113 3.69959 6.87047 3.94624C6.81981 4.19289 6.69789 4.41926 6.51982 4.59729L5.18982 5.92729C5.18982 5.92729 5.92726 11.1119 11.0727 11.7549Z"
+                                fill="#F8F8F8" />
+                        </svg>
+                        +237 000 000 000 000</li>
+                    <li><svg width="19" height="19" viewBox="0 0 19 19" fill="none">
+                            <path
+                                d="M9.17225 4.16878C10.6228 4.16878 11.9896 4.81181 12.9912 5.81703V5.82C12.9912 5.33728 13.316 4.97212 13.7649 4.97212H13.8789C14.5872 4.97212 14.7292 5.64009 14.7292 5.85087L14.7321 13.3529C14.6828 13.8445 15.2398 14.0987 15.5491 13.7828C16.7515 12.546 18.1925 7.41837 14.8004 4.44962C11.6369 1.67859 7.391 2.13637 5.13356 3.692C2.73422 5.34975 1.20056 9.0114 2.69028 12.4528C4.31715 16.2047 8.968 17.3239 11.7361 16.2077C13.1373 15.6418 13.7833 17.5335 12.3268 18.1528C10.1317 19.0891 4.01434 18.9935 1.15722 14.0458C-0.773065 10.7036 -0.670941 4.82428 4.45075 1.77834C8.36534 -0.553315 13.5304 0.0926851 16.644 3.34347C19.8977 6.74506 19.7095 13.1095 16.533 15.5836C15.0943 16.7088 12.958 15.6145 12.9734 13.9752L12.9574 13.4408C11.9557 14.4329 10.6228 15.0148 9.17225 15.0148C6.30265 15.0148 3.77625 12.4878 3.77625 9.62118C3.77625 6.72368 6.30265 4.16997 9.17225 4.16997V4.16878ZM12.7817 9.41397C12.673 7.31387 11.1144 6.04918 9.23103 6.04918H9.15978C6.98903 6.04918 5.78312 7.75918 5.78312 9.69778C5.78312 11.8715 7.23959 13.2442 9.15087 13.2442C11.2842 13.2442 12.6849 11.6833 12.787 9.83671L12.7817 9.41397Z"
+                                fill="#F8F8F8" />
+                        </svg>
+                        info@ninjasphere.cm</li>
+                    <li style="padding-left: 30px;">Follow us</li>
+                </ol>
+            </section>
+
         </div>
         <div class="footer-buttom">
-            <img alt="logo" src={% static 'websitecore/img/logo/ninjasphere-logo-white.PNG' %} />
             <p>Ninjasphere @ 2023 rights reserved</p>
         </div>
     </footer>
