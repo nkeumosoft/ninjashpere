@@ -7,6 +7,7 @@ from websitecore.views import (
     QualityAssuranceView,
     HomeView,
     TalentView,
+    KnowledgeView,
 )
 
 urlpatterns = [
@@ -16,4 +17,5 @@ urlpatterns = [
     path("web-development-service/", WebDevServiceView.as_view(), name="web_dev"),
     path("quality-assurance/", QualityAssuranceView.as_view(), name="quality_assurance"),
     path("talent/", TalentView.as_view(), name="talent"),
+    path("knowledge/", KnowledgeView.as_view(), name="knowledge"),
 ]
