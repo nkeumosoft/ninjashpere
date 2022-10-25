@@ -2,133 +2,151 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
         {% block title %}
-            NinjaSphere
+        NinjaSphere
         {% endblock %}
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;700;900&family=Poppins:wght@500;600&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;700;900&family=Poppins:wght@500;600&family=Source+Sans+Pro:wght@300;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href={% static 'websitecore/css/navbar&footer.css' %}>
     {% block head %}
 
     {% endblock %}
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="computer-tablet-img">
-                <img src={% static 'websitecore/img/logo/ninjaSphere-logo-dark.jpg' %} alt="NinjaSphere logo">
+            <div class="container">
+                <div class="computer-tablet-img">
+                    <img src={% static 'websitecore/img/logo/ninjaSphere-logo-dark.jpg' %} alt="NinjaSphere logo">
+                </div>
+                <ul class='navbar-main-list'>
+                    <li>
+                        <a class="nav-link" href={% url 'core:home' %}>HOME</a>
+                    </li>
+                    <li class="nav-item-with-sub-navigation">
+                        <a href="">SERVICES</a>
+                        <div class="sub-navbar-service">
+                            <div class="nav-service" style="margin-left: 50px;">
+                                <h4><a href={% url 'core:web_dev' %}>Web Development</a></h4>
+                                <div class="nav-service-grid">
+                                    <img src={% static 'websitecore/img/service-nav-img-1.png' %}
+                                        alt="two screens with different graphics">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
+                                        metus,
+                                        urna
+                                        lectus convallis massa, donec.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="nav-service">
+                                <h4><a href={% url 'core:mobile_dev'%}>mobile development</a></h4>
+                                <div class="nav-service-grid">
+                                    <div class="nav-service-grid-img-container">
+                                        <img src={% static 'websitecore/img/service-nav-img-2.png' %}
+                                            alt="computer and a phone">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
+                                        metus,
+                                        urna
+                                        lectus convallis massa, donec.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="nav-service">
+                                <h4><a href={% url 'core:cloud_devops' %}>Cloud&DevOps</a></h4>
+                                <div class="nav-service-grid">
+                                    <div class="nav-service-grid-img-container">
+                                        <img src={% static 'websitecore/img/service-nav-img-3.png' %}
+                                            alt="computer on atable ">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
+                                        metus,
+                                        urna
+                                        lectus convallis massa, donec. </p>
+                                </div>
+                            </div>
+                            <div class="nav-service">
+                                <h4><a href={% url 'core:quality_assurance' %}>Quality Assurance</a></h4>
+                                <div class="nav-service-grid">
+                                    <div class="nav-service-grid-img-container">
+                                        <img src={% static 'websitecore/img/service-nav-img-4.png' %}
+                                            alt="three individuals working on a computer">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
+                                        metus,
+                                        urna
+                                        lectus convallis massa, donec. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        {% comment %} Mets le lien vers la page KNOWLEDGE ici {% endcomment %}
+                        <a href="">KNOWLEDGE</a>
+                    </li>
+                    <li class="nav-item-with-sub-navigation">
+                        <a href="">CASE STUDY</a>
+                        <div class="sub-navbar-study">
+                            <div class="nav-study" style="margin-left: 200px;">
+                                <h4>Blog</h4>
+                                <div class="nav-study-grid">
+                                    <img src={% static 'websitecore/img/study-nav-img-1.png' %} alt="pen on a book">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus,
+                                        urna
+                                        lectus convallis massa, donec. </p>
+                                </div>
+                            </div>
+                            <div class="nav-study">
+                                <h4>SEO</h4>
+                                <div class="nav-study-grid">
+                                    <img src={% static 'websitecore/img/study-nav-img-2.png' %} alt="three dominos">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus,
+                                        urna
+                                        lectus convallis massa, donec. </p>
+                                </div>
+                            </div>
+                            <div class="nav-study">
+                                <h4>Content Writing</h4>
+                                <div class="nav-study-grid">
+                                    <img src={% static 'websitecore/img/study-nav-img-3.png' %}
+                                        alt="man typing on a PC">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus,
+                                        urna
+                                        lectus convallis massa, donec. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href={% url 'core:talent' %}>TALENT</a>
+                    </li>
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path
+                            d="M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z"
+                            stroke="black" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <button id="butt">Get in touch</button>
+                </ul>
             </div>
-            <ul>
-                <li>
-                    <a href={% url 'core:home' %}>HOME</a>
-                </li>
-                <li class="nav-item-with-sub-navigation">
-                    <a href="">SERVICES</a>
-                    <div class="sub-navbar-service">
-                        <div class="nav-service" style="margin-left: 50px;">
-                            <h4><a href="">Web Development</a></h4>
-                            <div class="nav-service-grid">
-                                <img src={% static 'websitecore/img/service-nav-img-1.png' %}
-                                    alt="two screens with different graphics">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
-                                    metus,
-                                    urna
-                                    lectus convallis massa, donec. </p>
-                            </div>
-                        </div>
-                        <div class="nav-service">
-                            <h4>mobile development</h4>
-                            <div class="nav-service-grid">
-                                <img src={% static 'websitecore/img/service-nav-img-2.png' %} alt="computer and a phone">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
-                                    metus,
-                                    urna
-                                    lectus convallis massa, donec. </p>
-                            </div>
-                        </div>
-                        <div class="nav-service">
-                            <h4>Cloud&DevOps</h4>
-                            <div class="nav-service-grid">
-                                <img src={% static 'websitecore/img/service-nav-img-3.png' %} alt="computer on atable ">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
-                                    metus,
-                                    urna
-                                    lectus convallis massa, donec. </p>
-                            </div>
-                        </div>
-                        <div class="nav-service">
-                            <h4>Quality Assurance</h4>
-                            <div class="nav-service-grid">
-                                <img src={% static 'websitecore/img/service-nav-img-4.png' %}
-                                    alt="three individuals working on a computer">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
-                                    metus,
-                                    urna
-                                    lectus convallis massa, donec. </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="">KNOWLEDGE</a>
-                </li>
-                <li class="nav-item-with-sub-navigation">
-                    <a href="">CASE STUDY</a>
-                    <div class="sub-navbar-study">
-                        <div class="nav-study" style="margin-left: 200px;">
-                            <h4>Blog</h4>
-                            <div class="nav-study-grid">
-                                <img src={% static 'websitecore/img/study-nav-img-1.png' %} alt="pen on a book">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus,
-                                    urna
-                                    lectus convallis massa, donec. </p>
-                            </div>
-                        </div>
-                        <div class="nav-study">
-                            <h4>SEO</h4>
-                            <div class="nav-study-grid">
-                                <img src={% static 'websitecore/img/study-nav-img-2.png' %} alt="three dominos">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus,
-                                    urna
-                                    lectus convallis massa, donec. </p>
-                            </div>
-                        </div>
-                        <div class="nav-study">
-                            <h4>Content Writing</h4>
-                            <div class="nav-study-grid">
-                                <img src={% static 'websitecore/img/study-nav-img-3.png' %} alt="man typing on a PC">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget metus,
-                                    urna
-                                    lectus convallis massa, donec. </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href={% url 'core:talent' %}>TALENT</a>
-                </li>
-                <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
-                    <path
-                        d="M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z"
-                        stroke="black" stroke-width="2" stroke-linecap="round" />
-                </svg>
-                <button id="butt">Get in touch</button>
-            </ul>
         </nav>
 
     </header>
     <main>
-    {% block content %}
+        {% block content %}
 
 
-    {% endblock %}
+        {% endblock %}
     </main>
 
     <footer>
@@ -188,4 +206,5 @@
         </div>
     </footer>
 </body>
+
 </html>
