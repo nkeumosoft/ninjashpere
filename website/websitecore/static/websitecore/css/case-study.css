@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.small-hero-container {
+    background-image: url(../../../static/websitecore/img/case-study-images/laptop-on-table-with-two-chairs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.small-hero-container header {
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 30px 0;
+}
+
+.small-hero-container-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'lexend', sans-serif;
+    margin: 0 0 20px;
+}
+
+.small-hero-container-text {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+.case-study-container {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.case-study-item {
+    width: 100%;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 30px;
+    color: #111827;
+    font-weight: 700;
+    font-family: 'lexend', sans-serif;
+    margin: 0px;
+    padding: 0;
+}
+
+.case-study-content {
+    display: flex;
+    gap: 35px;
+    height: 320px;
+    width: 100%;
+}
+
+.case-study-content-img {
+    flex-basis: 42%;
+    height: 100%;
+}
+
+.case-study-content-img img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.case-study-content-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description-text {
+    line-height: 1.5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #4b5563;
+    margin-top: 0;
+}
+
+.btn-viewcase {
+    background-color: #00B4D8;
+    color: #fff;
+    padding: 0.6em 1.25em;
+    font-size: 14px;
+    font-family: 'lexend', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    border-radius: 25px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.bloc-contact-et-formulaire {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkcyan;
+    padding: 50px 15px 40px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.formulaire {
+    background-color: #fff;
+    color: #003045;
+    padding-top: 30px;
+    width: 65%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.name {
+    margin-left: 90px;
+    width: 250px;
+}
+
+.num {
+    margin-left: 85px;
+    width: 250px;
+}
+
+.sms {
+    margin-left: 58px;
+    width: 250px;
+}
+
+.email {
+    width: 250px;
+    margin-left: 10px;
+}
+
+.mon-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-left: -200px;
+}
+
+.simplecontact {
+    text-align: center;
+    padding: 100px 15px 0px;
+}
+
+.simplecontact-sms {
+    margin-top: -60px;
+    margin-left: 50px;
+}
+
+.firstp {
+    font-weight: 800;
+    line-height: 1.5;
+    font-size: 40px;
+}
+
+.secondp {
+    font-size: 30px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    border-bottom: solid 2px aqua;
+}
+
+section.navbarend {
+    background-color: #003045;
+    color: #fff;
+}
+
+div.foot {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.contain :hover {
+    border-bottom: solid 2px aqua;
+}
+
+.blog :hover {
+    border-bottom: solid 2px aqua;
+}
+
+div.icon :hover {
+    border-bottom: solid 2px aqua;
+}
+
+.logow {
+
+    margin-bottom: 30px;
+    margin-left: 10px;
+    height: 20px;
+}
+
+.icon {
+    font-weight: 100px;
+    margin-top: -20px;
+}
+
+.infos-localisation span {
+    font-size: 15px;
+}
+
+.copyright {
+    margin-left: 200px;
+}
+
+.bouton {
+    width: 100px;
+    background-color: #003045;
+    color: #fff;
+}
+
+/* les medias queries */
+
+@media (max-width:320px) {
+    .case-study-content {
+        flex-direction: column;
+    }
+
+    .case-study-img {
+        width: 100%;
+        margin-left: 20px;
+        flex-shrink: 2;
+
+    }
+
+    .bloc-contact-et-formulaire {
+        flex-direction: column;
+    }
+
+    .formulaire {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .name {
+        margin-left: 0px;
+        width: 250px;
+    }
+
+    .num {
+        margin-left: 0px;
+        width: 250px;
+    }
+
+    .sms {
+        margin-left: 0px;
+        width: 250px;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    .description-text {
+        width: 100%;
+        margin-left: 18px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        margin-top: 00px;
+    }
+
+    div.foot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright {
+        text-align: left;
+        margin-right: 10px;
+        margin-left: 0px;
+        width: 100%;
+    }
+}
