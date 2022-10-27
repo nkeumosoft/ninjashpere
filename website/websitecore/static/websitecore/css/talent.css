@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.talent-area-container {
+    margin: 0 auto;
+    height: calc(100vh - 80px);
+    max-width: 95%;
+    padding: 40px 0px;
+}
+
+.talent-hero-img {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.talent-area-container p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+    max-width: 500px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 auto;
+    color: rgba(20, 20, 20, 0.849);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.talent-area-container img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .talent-area-container {
+        height: 100%;
+    }
+}

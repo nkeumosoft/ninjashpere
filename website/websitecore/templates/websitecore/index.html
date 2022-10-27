@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    NinjaSphere
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href={% static 'websitecore/css/landing_page.css' %} >
+{% endblock %}
+
+{% block content %}
+    <div>
+    <section class="hero"></section>
+    <section>
+        <div class="services">
+            <h3>SERVICES</h3>
+            <div class="service-content">
+                <div class="service-grid">
+                    <div class="column"
+                        style="background-image: url({% static 'websitecore/img/service-img-1.jpg' %}); background-repeat: no-repeat; background-position: center; background-size: cover;  opacity: 0.8;">
+                        <div class="column-content">
+                            <h4>Web development</h4>
+                            <section>
+                                <h5>Engineering</h5>
+                                <ul>
+                                    <li>Wed development</li>
+                                    <li>Mobile development</li>
+                                    <li>Cloud & devops</li>
+                                    <li>Datascience</li>
+                                </ul>
+                            </section>
+
+                        </div>
+                    </div>
+                    <div class="column"
+                        style="background-image: url({% static 'websitecore/img/service-img-2.jpg' %}); background-repeat: no-repeat; background-position: center; background-size: cover;  opacity: 0.8;">
+                        <div class="column-content">
+                            <h4 style="font-size: 28px;">Mobile Development</h4>
+                            <section>
+                                <h5>Engineering</h5>
+                                <ul>
+                                    <li>Wed development</li>
+                                    <li>Mobile development</li>
+                                    <li>Cloud & devops</li>
+                                    <li>Datascience</li>
+                                </ul>
+                            </section>
+
+                        </div>
+                    </div>
+                    <div class="column"
+                        style="background-image: url({% static 'websitecore/img/service-img-3.jpg' %}); background-repeat: no-repeat; background-position: center; background-size: cover;  opacity: 0.8;">
+                        <div class="column-content">
+                            <h4>Cloud & DevOps</h4>
+                            <section>
+                                <h5>Engineering</h5>
+                                <ul>
+                                    <li>Wed development</li>
+                                    <li>Mobile development</li>
+                                    <li>Cloud & devops</li>
+                                    <li>Datascience</li>
+                                </ul>
+                            </section>
+
+                        </div>
+                    </div>
+                    <div class="column"
+                        style="background-image: url({% static 'websitecore/img/service-img-4.jpg' %}); background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.8;">
+                        <div class="column-content">
+                            <h4>Quality Assurance</h4>
+                            <section>
+                                <h5>Engineering</h5>
+                                <ul>
+                                    <li>Wed development</li>
+                                    <li>Mobile development</li>
+                                    <li>Cloud & devops</li>
+                                    <li>Datascience</li>
+                                </ul>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article>
+        <div class="about-us">
+            <div class="background-img">
+                <div class="about-content">
+                    <img alt="picture of a man smilling" src={% static 'websitecore/img/Ellipse 1.png' %}>
+                    <p>We promise to help you improve your digital performance and search engine ranking based on
+                        you
+                        and your business. We do this by taking the time to get to know who you are and what you do
+                        best, your industry, and your objectives.</p>
+                    <p>read more</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <section>
+        <div class="case-study">
+            <h3>CASE STUDY</h3>
+            <div class="study-grid">
+                <div class="case-content"
+                    style="background-image: url({% static 'websitecore/img/case-study-img-1.png' %}); background-repeat: no-repeat; background-size: cover;">
+                    <div class="study-content">
+                        <h4>Case 1</h4>
+                        <p>here we will expose some of our on-going projects so as one can see what we are capable
+                            of
+                            doing
+                            without no risk of talks like i not sure of what they can or are they people we can rely
+                            on,
+                            and so on.
+                        </p>
+                    </div>
+                </div>
+                <div class="case-content"
+                    style="background-image: url({% static 'websitecore/img/case-study-img-2.png' %}); background-repeat: no-repeat; background-size: cover;">
+                    <div class="study-content">
+                        <h4>Case 2</h4>
+                        <p>here we will expose some of our on-going projects so as one can see what we are capable
+                            of
+                            doing
+                            without no risk of talks like i not sure of what they can or are they people we can rely
+                            on,
+                            and so on.
+                        </p>
+                    </div>
+                </div>
+                <div class="case-content"
+                    style="background-image: url({% static 'websitecore/img/case-study-img-3.png' %}); background-repeat: no-repeat; background-size: cover;">
+                    <div class="study-content">
+                        <h4>Case 3</h4>
+                        <p>here we will expose some of our on-going projects so as one can see what we are capable
+                            of
+                            doing
+                            without no risk of talks like i not sure of what they can or are they people we can rely
+                            on,
+                            and so on.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

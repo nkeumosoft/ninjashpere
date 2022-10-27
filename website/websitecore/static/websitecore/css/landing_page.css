@@ -1,0 +1,908 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hero {
+    background-image: url(../img/hero-img.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+}
+
+.services h3 {
+    padding-left: 200px;
+    font-size: 56px;
+    z-index: 1;
+    font-family: 'Lexend', sans-serif;
+}
+
+.service-content:hover {
+    background: none;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 500px;
+}
+
+.column-content {
+    background-color: rgba(0, 47, 255, 0.795);
+    height: 100%;
+    opacity: 0.9;
+}
+
+.column-content:hover {
+    background: none;
+}
+
+.column h4 {
+    font-size: 30px;
+    margin-top: -1px;
+}
+
+.column h4 {
+    padding-top: 400px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.column section {
+    display: none;
+    width: 100%;
+    animation: moveup 500ms;
+}
+
+.column section h5 {
+    font-size: 26px;
+    margin-left: 38px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.column:hover section {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+    padding-top: 150px;
+    width: 300px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.column:hover {
+    animation: moveup;
+}
+
+@keyframes moveup {
+    0% {
+        top: 60px;
+        position: relative;
+    }
+
+    99% {
+        top: 2px;
+        position: relative;
+    }
+
+    100% {
+        top: 100px;
+        position: absolute;
+    }
+}
+
+.column:hover h4 {
+    display: none;
+}
+
+.about-us {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-content {
+    padding: 120px 130px;
+    background-color: white;
+    opacity: 0.75;
+}
+
+.background-img {
+    background-image: url('../img/about-us-bg-img.png');
+    height: 470px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.case-study h3 {
+    padding-left: 200px;
+    font-size: 56px;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.study-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+}
+
+.case-content h4 {
+    padding-top: 410px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.case-content p {
+    display: none;
+    color: white;
+    background: none;
+}
+
+.case-content:hover p {
+    display: block;
+    position: absolute;
+    color: white;
+    width: 355px;
+    margin-left: 30px;
+    padding-top: 300px;
+    font-size: 20px;
+    animation: moveup-animation 500ms;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@keyframes moveup-animation {
+    0% {
+        top: 45px;
+        position: relative;
+    }
+
+    99% {
+        top: 5px;
+        position: relative;
+    }
+
+    100% {
+        top: 200px;
+        position: absolute;
+    }
+}
+
+.case-content:hover h4 {
+    display: none;
+}
+
+.case-content:hover {
+    background: none;
+}
+
+.study-content {
+    background-color: blue;
+    opacity: 0.7;
+    padding-top: 1px;
+    height: 500px;
+}
+
+.study-content:hover {
+    background: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 430px) {
+
+    .service-grid,
+    .study-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content p {
+        font-size: 12px;
+        margin-right: -100px;
+        margin-left: 200px;
+    }
+
+    .about-us {
+        margin-left: -300px;
+        height: 497px;
+    }
+
+    .about-content img {
+        margin-left: 300px;
+    }
+
+    .background-img {
+        height: 900px;
+    }
+
+    .column h4 {
+        padding-top: 150px;
+        text-align: center;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .column-content:hover h4 {
+        display: block;
+    }
+
+    .services h3 {
+        padding-left: 20px;
+        font-size: 44px;
+        z-index: 1;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .column:hover section {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        line-height: 40px;
+        margin-top: -150px;
+        width: 300px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    section h5 {
+        display: none;
+    }
+
+    .column section {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        line-height: 40px;
+        width: 300px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .column:hover {
+        animation: none;
+        height: 500px;
+    }
+
+    .column-content {
+        background-color: black;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    .service-grid {
+        grid-auto-rows: 500px;
+    }
+
+    .column-content:hover {
+        background: black;
+        height: 500px;
+    }
+
+    .case-study h3 {
+        padding-left: 10px;
+        font-size: 40px;
+        z-index: 1;
+    }
+
+    .case-content h4 {
+        text-align: center;
+        padding-top: 130px;
+        color: white;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .case-content:hover h4 {
+        display: block;
+    }
+
+    .case-content p {
+        display: block;
+        color: white;
+        background: none;
+        padding-top: 17px;
+        margin-left: 18px;
+        width: 300px;
+        font-size: 16px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .case-content:hover p {
+        display: block;
+        color: white;
+        background: none;
+        padding-top: 1px;
+        margin-left: 18px;
+        width: 300px;
+        font-size: 16px;
+        animation: none;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .case-content p:hover {
+        line-height: 18px;
+    }
+
+    .study-content {
+        background-color: black;
+        opacity: 0.7;
+        padding-top: 1px;
+        height: 500px;
+    }
+
+    .study-content:hover {
+        background: black;
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 500px) {
+
+    .service-grid,
+    .study-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .column h4 {
+        padding-top: 150px;
+        text-align: center;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .column-content:hover h4 {
+        display: block;
+    }
+
+    .services h3 {
+        padding-left: 1é0px;
+        font-size: 44px;
+        z-index: 1;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .column:hover section {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        line-height: 40px;
+        margin-top: -150px;
+        width: 300px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    section h5 {
+        display: none;
+    }
+
+    .column section {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        line-height: 40px;
+        width: 300px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .column:hover {
+        animation: none;
+        height: 500px;
+    }
+
+    .column-content {
+        background-color: black;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    .service-grid {
+        grid-auto-rows: 500px;
+    }
+
+    .column-content:hover {
+        background: black;
+        height: 500px;
+    }
+
+    .about-us {
+        margin-left: -300px;
+        height: 520px;
+    }
+
+    .about-content {
+        padding: 141px 130px;
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .about-content img {
+        margin-left: 300px;
+    }
+
+    .background-img {
+        height: 900px;
+    }
+
+    .case-study h3 {
+        padding-left: 10px;
+        font-size: 45px;
+        z-index: 1;
+    }
+
+    .case-content h4 {
+        padding-top: 110px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .case-content:hover h4 {
+        display: block;
+    }
+
+    .case-content p {
+        display: block;
+        color: white;
+        background: none;
+        padding-top: 80px;
+        margin-left: 18px;
+        width: 400px;
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .case-content:hover p {
+        display: block;
+        color: white;
+        background: none;
+        padding-top: 60px;
+        margin-left: 18px;
+        width: 400px;
+        font-size: 20px;
+        animation: none;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .case-content p:hover {
+        line-height: 23px;
+    }
+
+    .study-content {
+        background-color: black;
+        opacity: 0.7;
+        padding-top: 1px;
+        height: 500px;
+    }
+
+    .study-content:hover {
+        background: black;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 850px) {
+    .case-study h3 {
+        margin-left: -160px;
+        font-size: 45px;
+    }
+
+    .services h3 {
+        margin-left: -160px;
+        font-size: 50px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        margin-right: -100px;
+        margin-left: 200px;
+    }
+
+    .about-content {
+        padding: 142px 130px;
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .about-us {
+        margin-left: -300px;
+        height: 520px;
+    }
+
+    .about-content img {
+        margin-left: 300px;
+    }
+
+    .background-img {
+        height: 520px;
+    }
+
+    .column ul {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        line-height: 40px;
+        margin-top: 150px;
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden;
+    }
+
+    .study-content p:hover {
+        font-size: 16px;
+        width: 350px;
+        line-height: 23px;
+        height: 500px;
+        width: 300px;
+    }
+
+    .study-content:hover {
+        width: 350px;
+    }
+
+    .service-content:hover {
+        background: inherit;
+    }
+
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 500px;
+    }
+
+    .column-content {
+        background-color: black;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    .column-content:hover {
+        background: black;
+    }
+
+    .column h4 {
+        font-size: 30px;
+        margin-top: -1px;
+    }
+
+    .column h4 {
+        padding-top: 170px;
+        text-align: center;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .column section {
+        animation: none;
+        display: block;
+        width: 100%;
+        animation: none;
+        position: absolute;
+    }
+
+    .column section h5 {
+        font-size: 26px;
+        margin-left: 38px;
+        font-family: 'Poppins', sans-serif;
+        display: none;
+    }
+
+    .column section {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        line-height: 30px;
+        width: 500px;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding-top: 40px;
+        padding-left: 19px;
+    }
+
+    .column section ul {
+        margin-top: -1px;
+    }
+
+    .column:hover section {
+        margin-top: -110px;
+        width: 400px;
+    }
+
+    .column:hover {
+        animation: none;
+    }
+
+    .column:hover h4 {
+        display: block;
+    }
+
+    .study-grid {
+        grid-template-columns: 1fr;
+        width: 700px;
+        margin-left: 57px;
+    }
+
+    .case-study h3 {
+        margin-left: -120px;
+        font-size: 45px;
+        margin-top: 5px;
+        z-index: 1;
+    }
+
+    .case-content h4 {
+        padding-top: 50px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .case-content p {
+        display: block;
+        color: white;
+    }
+
+    .case-content:hover p {
+        display: block;
+        position: absolute;
+        color: white;
+        width: 600px;
+        margin-left: 30px;
+        padding-top: 100px;
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        animation: none;
+    }
+
+    .case-content p {
+        display: block;
+        position: absolute;
+        color: white;
+        width: 600px;
+        margin-left: 30px;
+        padding-top: 100px;
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .case-content:hover h4 {
+        display: block;
+        text-align: center;
+        width: 100ù;
+    }
+
+    .study-content {
+        background-color: black;
+        opacity: 0.8;
+        padding-top: 1px;
+        height: 500px;
+    }
+
+    .study-content:hover {
+        background: black;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1040px) {
+    .case-study h3 {
+        margin-left: -160px;
+        font-size: 45px;
+    }
+
+    .services h3 {
+        margin-left: -160px;
+        font-size: 50px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+        margin-right: -100px;
+        margin-left: 200px;
+    }
+
+    .about-content {
+        padding: 126px 130px;
+        background-color: white;
+        opacity: 0.8;
+    }
+
+    .about-us {
+        margin-left: -300px;
+        height: 520px;
+    }
+
+    .about-content img {
+        margin-left: 300px;
+    }
+
+    .background-img {
+        height: 520px;
+    }
+
+    .column ul {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        line-height: 40px;
+        margin-top: 150px;
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden;
+    }
+
+    .study-content p:hover {
+        font-size: 16px;
+        width: 350px;
+        line-height: 23px;
+        height: 500px;
+        width: 300px;
+    }
+
+    .study-content:hover {
+        width: 350px;
+    }
+
+    .service-content:hover {
+        background: inherit;
+    }
+
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 500px;
+    }
+
+    .column-content {
+        background-color: black;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    .column-content:hover {
+        background: black;
+    }
+
+    .column h4 {
+        font-size: 30px;
+        margin-top: -1px;
+    }
+
+    .column h4 {
+        padding-top: 170px;
+        text-align: center;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .column section {
+        animation: none;
+        display: block;
+        width: 100%;
+        animation: none;
+        position: absolute;
+    }
+
+    .column section h5 {
+        font-size: 26px;
+        margin-left: 38px;
+        font-family: 'Poppins', sans-serif;
+        display: none;
+    }
+
+    .column section {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        line-height: 30px;
+        width: 400px;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding-top: 40px;
+        padding-left: 19px;
+    }
+
+    .column section ul {
+        margin-top: -1px;
+        width: 400px;
+    }
+
+    .column:hover section {
+        margin-top: -110px;
+    }
+
+    .column:hover {
+        animation: none;
+    }
+
+    .column:hover h4 {
+        display: block;
+    }
+
+    .study-grid {
+        grid-template-columns: 1fr;
+        width: 900px;
+        margin-left: 57px;
+    }
+
+    .case-study h3 {
+        margin-left: -120px;
+        font-size: 45px;
+        margin-top: 5px;
+        z-index: 1;
+    }
+
+    .case-content h4 {
+        padding-top: 50px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .case-content p {
+        display: block;
+        color: white;
+    }
+
+    .case-content:hover p {
+        display: block;
+        position: absolute;
+        color: white;
+        width: 800px;
+        margin-left: 30px;
+        padding-top: 100px;
+        font-size: 25px;
+        font-family: 'Source Sans Pro', sans-serif;
+        animation: none;
+        line-height: 30px;
+    }
+
+    .case-content p {
+        display: block;
+        position: absolute;
+        color: white;
+        width: 800px;
+        margin-left: 30px;
+        padding-top: 100px;
+        font-size: 25px;
+        font-family: 'Source Sans Pro', sans-serif;
+        line-height: 30px;
+    }
+
+    .case-content:hover h4 {
+        display: block;
+        text-align: center;
+    }
+
+    .study-content {
+        background-color: black;
+        opacity: 0.8;
+        padding-top: 1px;
+        height: 500px;
+    }
+
+    .study-content:hover {
+        background: black;
+        width: 100%;
+    }
+
+    .case-study {
+        margin-left: 10px;
+    }
+}

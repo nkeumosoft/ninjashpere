@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    NinjaSphere - Talent
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href={% static 'websitecore/css/talent.css' %}>
+
+{% endblock %}
+
+{% block content %}
+    <article class='talent-area-container'>
+        <section>
+            <div class='talent-hero-img'>
+                <img src={% static 'websitecore/img/talent-construction-img.webp' %} alt="image illustrating this web page is in construction">
+            </div>
+            <p>
+                This web page is under construction and will be available in no time with some amazing talents.
+            </p>
+        </section>
+    </article>
+
+{% endblock %}
