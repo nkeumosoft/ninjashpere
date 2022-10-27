@@ -92,12 +92,10 @@
                         </div>
                     </li>
                     <li>
-                        {% comment %} Mets le lien vers la page KNOWLEDGE ici {% endcomment %}
                         <a href={% url 'core:knowledge' %}>KNOWLEDGE</a>
                     </li>
                     <li>
-                        {% comment %} Mets le lien vers la page CASE STUDY(PROJET) ici {% endcomment %}
-                        <a href="">CASE STUDY</a>
+                        <a href={% url 'core:case_study' %}>CASE STUDY</a>
                         <!--Ne Supprime pas cette partie on vas l'utiliser après -->
                         <!--
                         <div class="sub-navbar-study">

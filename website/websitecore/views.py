@@ -70,3 +70,14 @@ class KnowledgeView(TemplateView):
     def get(self, request, *args, **kwargs):
         # context = {"navbar": "knowledge"}
         return render(request, self.template_name, {})
+
+
+class CaseStudyView(View):
+    template_name = "websitecore/case-study.html"
+
+    def get(self, request, *args, **kwargs):
+        # context = {"navbar": "knowledge"}
+        return render(request, self.template_name, {})
+
+    def post(self, request, *args, **kwargs):
+        ...
