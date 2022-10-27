@@ -5,16 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;700;900&family=Poppins:wght@500;600&family=Source+Sans+Pro:wght@300;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../../static/websitecore/css/case-study.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <title>NinjaSphere - Case Study</title>
 </head>
 
@@ -54,7 +50,7 @@
                                     distinctio at nobis.
                                     Cupiditate perferendis voluptates voluptatum accusamusaspernaturveritatis. In.
                                 </p>
-                                <a class="btn-viewcase" href="#">View Case Study</a>
+                                <a class="btn-viewcase" href="#">Explore</a>
                             </div>
                         </div>
                     </section>
@@ -85,7 +81,7 @@
                                     distinctio at nobis.
                                     Cupiditate perferendis voluptates voluptatum accusamusaspernaturveritatis. In.
                                 </p>
-                                <a class="btn-viewcase" href="#">View Case Study</a>
+                                <a class="btn-viewcase" href="#">Explore</a>
                             </div>
                         </div>
                     </section>
@@ -116,7 +112,7 @@
                                     distinctio at nobis.
                                     Cupiditate perferendis voluptates voluptatum accusamusaspernaturveritatis. In.
                                 </p>
-                                <a class="btn-viewcase" href="#">View Case Study</a>
+                                <a class="btn-viewcase" href="#">Explore</a>
                             </div>
                         </div>
                     </section>
@@ -147,7 +143,10 @@
                                     distinctio at nobis.
                                     Cupiditate perferendis voluptates voluptatum accusamusaspernaturveritatis. In.
                                 </p>
-                                <a class="btn-viewcase" href="#">View Case Study</a>
+                                <p class="description-techs">
+
+                                </p>
+                                <a class="btn-viewcase" href="#">Explore</a>
                             </div>
                         </div>
                     </section>
@@ -155,43 +154,56 @@
             </div>
         </section>
 
-        <!--
         <section class="bloc-contact-et-formulaire">
-            <div class="simplecontact">
-                <p class="firstp">Contact the team today for advice on your digital marketing campaign</p>
-                <p class="secondp">If you are looking to increase your traffic, sales & leads, let's have a chat!
-                </p>
-                <div class="call">
-                    <img class="mon-image" src="../../static/websitecore/img/case-study-images/grave.jpg"
-                        alt="mon image 30*30">
-                    <div>
-                        <p class="simplecontact-sms">Call or send a message <br><span class="tel">+237673488887</span>
-                        </p>
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-description">
+                        <hgroup>
+                            <h2 class="form-description-title">Contact the team today for advice on your
+                                digital marketing campaign</h2>
+                            <h3 class="form-description-subtitle">If you are looking to increase your traffic,
+                                sales & leads, let's have a
+                                chat!</h3>
+                        </hgroup>
+                        <address class="form-description-address">
+                            <div class="form-description-img">
+                                <img src="../../static/websitecore/img/case-study-images/john-doe.jpg"
+                                    alt="mon image 30*30">
+                            </div>
+                            <section class="phone-numb-container">
+                                <h1 class="form-description-subtitle">Call or send a message </h1>
+                                <p class="form-description-tel">+237673488887</p>
+                            </section>
+                        </address>
+                    </div>
+                    <div class="formulaire">
+                        <hgroup>
+                            <h1 class="form-title">Send us a message</h1>
+                            <h2 class="form-subtitle">The team will usually respond within 1 hour.</h2>
+                        </hgroup>
+                        <form>
+                            <fieldset>
+                                <p class="form-input-grp">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name" placeholder="Your name">
+                                </p>
+                                <p class="form-input-grp">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="Your email">
+                                </p>
+                                <p class="form-input-grp">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                                </p>
 
+                            </fieldset>
+                            <button class="submit-form-btn">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="formulaire">
-
-                <p class="titre-formulaire">Send us a message</p>
-
-                <p class="pform2">The team will usually respond within 1 hour.</p> <br>
-                <label for="name" aria-placeholder="yvan">Name</label>
-                <input class="name" type="text "> <br>
-                <br>
-                <label for="Email">Email Adress</label>
-                <input class="email" type="text"> <br>
-                <br>
-                <label for="phone">phone</label>
-                <input class="num" type="number" name="phone" id=""> <br>
-                <br>
-                <label for="Message">Message</label>
-                <input class="sms" type="Message" name="" id="aria-placeholder"> <br>
-                <br>
-                <input class="bouton" type="Submit" value="Submit">
-            </div>
         </section>
-        -->
+
     </main>
 </body>
 
