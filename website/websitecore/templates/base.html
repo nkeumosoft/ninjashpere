@@ -40,7 +40,8 @@
                             <div class="nav-service" style="margin-left: 50px;">
                                 <h4><a href={% url 'core:web_dev' %}>Web Development</a></h4>
                                 <div class="nav-service-grid">
-                                    <img alt="two screens with different graphics" src={% static 'websitecore/img/service-nav-img-1.png' %}>
+                                    <img alt="two screens with different graphics"
+                                        src={% static 'websitecore/img/service-nav-img-1.png' %}>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
                                         metus,
                                         urna
@@ -52,7 +53,8 @@
                                 <h4><a href={% url 'core:mobile_dev'%}>Mobile Development</a></h4>
                                 <div class="nav-service-grid">
                                     <div class="nav-service-grid-img-container">
-                                        <img alt="computer and a phone" src={% static 'websitecore/img/service-nav-img-2.png' %}>
+                                        <img alt="computer and a phone"
+                                            src={% static 'websitecore/img/service-nav-img-2.png' %}>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
                                         metus,
@@ -65,7 +67,8 @@
                                 <h4><a href={% url 'core:cloud_devops' %}>Cloud & DevOps</a></h4>
                                 <div class="nav-service-grid">
                                     <div class="nav-service-grid-img-container">
-                                        <img alt="computer on atable " src={% static 'websitecore/img/service-nav-img-3.png' %}>
+                                        <img alt="computer on atable "
+                                            src={% static 'websitecore/img/service-nav-img-3.png' %}>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
                                         metus,
@@ -77,7 +80,8 @@
                                 <h4><a href={% url 'core:quality_assurance' %}>Quality Assurance</a></h4>
                                 <div class="nav-service-grid">
                                     <div class="nav-service-grid-img-container">
-                                        <img alt="three individuals working on a computer" src={% static 'websitecore/img/service-nav-img-4.png' %}>
+                                        <img alt="three individuals working on a computer"
+                                            src={% static 'websitecore/img/service-nav-img-4.png' %}>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus eget
                                         metus,
@@ -91,8 +95,11 @@
                         {% comment %} Mets le lien vers la page KNOWLEDGE ici {% endcomment %}
                         <a href={% url 'core:knowledge' %}>KNOWLEDGE</a>
                     </li>
-                    <li class="nav-item-with-sub-navigation">
+                    <li>
+                        {% comment %} Mets le lien vers la page CASE STUDY(PROJET) ici {% endcomment %}
                         <a href="">CASE STUDY</a>
+                        <!--Ne Supprime pas cette partie on vas l'utiliser après -->
+                        <!--
                         <div class="sub-navbar-study">
                             <div class="nav-study" style="margin-left: 200px;">
                                 <h4>Blog</h4>
@@ -122,6 +129,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
                     </li>
                     <li>
                         <a href={% url 'core:talent' %}>TALENT</a>
